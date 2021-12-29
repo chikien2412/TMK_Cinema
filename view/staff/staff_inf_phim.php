@@ -1,11 +1,12 @@
 <?php
 include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_nav_staff.php'
 ?>
 
 <main>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 staff_col">
+    <div class="container" style = 'min-height: 500px'>
+        <div class="row" style = 'Height: 300px'>
+            <div class=" mt-5 col-12 staff_col">
                 <h3 style='text-align: center ;  text-transform:uppercase ;'>Thông tin phim</h3>
             </div>
             <div class="col-12">
@@ -53,3 +54,6 @@ include_once '../../partials_front/header.php';
         </div>
     </div>
 </main>
+<?php
+include_once '../../partials_front/footer.php'
+?>

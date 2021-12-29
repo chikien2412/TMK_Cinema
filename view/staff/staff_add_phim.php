@@ -1,5 +1,6 @@
 <?php
-include_once '../../partials_front/header.php'
+include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_nav_staff.php'
 ?>
 
 <main>
@@ -89,10 +90,10 @@ include_once '../../partials_front/header.php'
             <div class="row">
                 <div class="col-10" style="margin-left: 300px;margin-top: 20px;">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn btn-secondary me-md-2" style="width: 140px; margin: 8px" type="button">Xác
+                        <button class="btn btn-primary me-md-2" style="width: 140px; margin: 8px" type="button">Xác
                             nhận</button>
                         <form action="../staff/staff_inf_phim.php" method="get">
-                            <button class="btn btn-secondary" style="width: 140px; margin: 8px" type="submit">Quay
+                            <button class="btn btn-primary" style="width: 140px; margin: 8px" type="submit">Quay
                                 lại</button>
                         </form>
                     </div>
@@ -100,3 +101,6 @@ include_once '../../partials_front/header.php'
             </div>
         </div>
 </main>
+<?php
+include_once '../../partials_front/footer.php'
+?>
