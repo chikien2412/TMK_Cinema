@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* css staff */
+
+.staff_col {
+    padding-top: 88px;
+    width: 100%;
+    padding: 10px;
+}
+
+.staff-add {
+    margin: 20px;
+}
+
+.staff-add:hover {
+    color: #fff;
+}
+
+.staff-table {
+    margin: 20px;
+    width: 97%;
+}
+
+.staff-row {
+    font-weight: normal;
+}
+
+.staff_date {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.staff_date:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.staff_ComB {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.staff_ComB:hover {}
+
+.staff_ComB:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+option:hover {
+    background-color: blue;
+}
