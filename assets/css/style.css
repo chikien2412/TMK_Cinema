@@ -253,8 +253,6 @@ a {
     border-radius: 0.25rem;
 }
 
-.staff_ComB:hover {}
-
 .staff_ComB:focus {
     color: #212529;
     background-color: #fff;
