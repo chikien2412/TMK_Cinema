@@ -21,7 +21,7 @@ include_once '../../partials_front/header_nav_staff.php';
                         <br>
 
                         <div class="">
-                            <a href="home.php" class="btn_link"><i class="fas fa-user-plus"></i> THÊM KHÁCH HÀNG</a>
+                            <a href="add.php" class="btn_link"><i class="fas fa-user-plus"></i> THÊM KHÁCH HÀNG</a>
                         </div>
 
                         </br>
