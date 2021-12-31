@@ -2,8 +2,7 @@
 include_once '../../partials_front/header.php';
 include_once '../../partials_front/header_nav_staff.php'
 ?>
-
-<main>
+<section>
     <div class="container">
         <div class="row">
             <div class="col-12 staff_col">
@@ -89,9 +88,9 @@ include_once '../../partials_front/header_nav_staff.php'
                 </div>
             </div>
             <div class="row">
-                <div class="col-10" style="margin-left: 300px;margin-top: 20px;">
+                <div class="col-10" style="margin-left: 300px;margin-top: 20px;margin-bottom: 20px;">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn btn-primary me-md-2" style="width: 140px; margin: 8px" type="button">Xác
+                        <button class="js_updateinf btn btn-primary me-md-2" style="width: 140px; margin: 8px;margin-left: -38px;" type="button">Xác
                             nhận</button>
                         <form action="../staff/staff_inf_phim.php" method="get">
                             <button class="btn btn-primary" style="width: 140px; margin: 8px" type="submit">Quay
@@ -101,7 +100,18 @@ include_once '../../partials_front/header_nav_staff.php'
                 </div>
             </div>
         </div>
-</main>
+</section>
+<section class = "js_update" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none">
+    <div class="cancel-container" style = "background-color: #fff;height: 130px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
+        <div class="row">
+            <div class="col-12" style = "text-align: center;font-size: 16px;margin-top: 30px;margin-left: 5px;">
+            <h5>Bạn đã cập nhập thành công</h5>
+            </div>
+            <button type="submit" class="js_ok btn btn-primary staff-add" style = "margin-left: 110px;width: 75px;">OK</button>
+            </div>
+        </div>
+    </div>
+</section>
 <?php
 include_once '../../partials_front/footer.php'
 ?>
