@@ -1,7 +1,7 @@
 <?php
 include_once '../../partials_front/header.php';
-include_once '../../partials_front/header_nav_customer.php';
-include_once '../../partials_front/slider.php';
+include_once '../../partials_front/header_nav_staff.php';
+
 ?>
 <main class="">
     <div class="container mb-3">
@@ -62,14 +62,14 @@ include_once '../../partials_front/slider.php';
                     </div>
                 </div>
                 <div class="text-center pb-5">
-                <button type="submit" class="btn btn-primary w-auto form_btn mt-3">Xác nhận</button>
-                <a href="" class="btn btn-danger w-auto form_btn mt-3">Quay lại</a>
-            </div>
+                    <a href="home.php" class="btn_link">XÁC NHẬN</a>
+                    <a href="home.php" class="btn_link">QUAY LẠI</a>
+                </div>
 
             </div>
         </div>
 
-
+</main>
 
 
 <?php
