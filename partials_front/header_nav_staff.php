@@ -5,7 +5,7 @@
                 <a class="nav-link" href="#">KHÁCH HÀNG</a>
             </li>
             <li class="nav-item nav-item-line-staff position-relative">
-                <a class="nav-link" href="#">PHIM</a>
+                <a class="nav-link" href="../../view/staff/staff_inf_phim.php">PHIM</a>
             </li>
             <li class="nav-item nav-item-line-staff position-relative">
                 <a class="nav-link" href="#">VÉ</a>
