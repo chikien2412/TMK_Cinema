@@ -13,7 +13,7 @@ include_once '../../partials_front/slider.php';
         <div class="row gx-4 gy-4">
             <div class="col-4">
                 <div class="product_item rounded-2">
-                    <a class="product_link" href="#">
+                    <a class="product_link" href="./details_film.php">
                         <img class="w-100 rounded-top" src="../../assets/img/pr_spiderman.jpg" alt="">
                         <div class="product_name rounded-bottom">SPIDER-MAN: NO WAY HOME</div>
                     </a>

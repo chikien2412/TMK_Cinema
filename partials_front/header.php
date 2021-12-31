@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
   
 
-  <title>Education</title>
+  <title>TMK Cinema</title>
 </head>
 
 <body>
