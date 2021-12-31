@@ -157,7 +157,7 @@ a {
 }
 
 .product_view {
-    width: 130px;
+    width: 170px;
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -165,6 +165,8 @@ a {
     border: var(--color-primary) solid 1px;
     color: var(--color-primary);
 }
+
+
 
 .product_view a {
     color: var(--color-primary);
