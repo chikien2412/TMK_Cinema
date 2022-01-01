@@ -1,62 +1,86 @@
-$(document).ready(function () {
-  $("#btn-continue1").click(function () {
-    $(".tickets").css("display", "none");
-    $(".chair").css("display", "block");
-    $(".payment").css("display", "none");
-  });
+$(document).ready(function() {
+    $("#btn-continue1").click(function() {
+        $(".tickets").css("display", "none");
+        $(".chair").css("display", "block");
+        $(".payment").css("display", "none");
+    });
 
-  $("#btn-back").click(function () {
-    $(".tickets").css("display", "block");
-    $(".chair").css("display", "none");
-    $(".payment").css("display", "none");
-  });
+    $("#btn-back").click(function() {
+        $(".tickets").css("display", "block");
+        $(".chair").css("display", "none");
+        $(".payment").css("display", "none");
+    });
 
-  $("#btn-continue2").click(function () {
-    $(".tickets").css("display", "none");
-    $(".chair").css("display", "none");
-    $(".payment").css("display", "block");
-  });
+    $("#btn-continue2").click(function() {
+        $(".tickets").css("display", "none");
+        $(".chair").css("display", "none");
+        $(".payment").css("display", "block");
+    });
 
-  $("#btn-back1").click(function () {
-    $(".tickets").css("display", "block");
-    $(".chair").css("display", "none");
-    $(".payment").css("display", "none");
-  });
+    $("#btn-back1").click(function() {
+        $(".tickets").css("display", "block");
+        $(".chair").css("display", "none");
+        $(".payment").css("display", "none");
+    });
 
-  // Modal
-  var modal = $('.overlay');
-  var btn_buy_ticket = $('.btn_buy_ticket');
-  var close = $('.close');
-  var btn_close = $('.btn_close');
-  // window.location.href = "./buy_tickets.php";
-  // btn_buy_ticket.click(function () {
-  //   modal.show();
-  //   // window.location.href = "./buy_tickets.php";
-  // });
+    // Modal
+    var modal = $('.overlay');
+    var btn_buy_ticket = $('.btn_buy_ticket');
+    var close = $('.close');
+    var btn_close = $('.btn_close');
+    // window.location.href = "./buy_tickets.php";
+    // btn_buy_ticket.click(function () {
+    //   modal.show();
+    //   // window.location.href = "./buy_tickets.php";
+    // });
 
-  close.click(function () {
-    modal.hide();
-  });
+    close.click(function() {
+        modal.hide();
+    });
 
-  btn_close.click(function () {
-    modal.hide();
-  });
+    btn_close.click(function() {
+        modal.hide();
+    });
 
-  $(window).on('click', function (e) {
-    if ($(e.target).is('.modal')) {
-      modal.hide();
-    }
-  });
+    $(window).on('click', function(e) {
+        if ($(e.target).is('.modal')) {
+            modal.hide();
+        }
+    });
 
-  // Process Login
-  $("#btnLogin").click(function () {
-    var userName = $("#inputUserName").val();
-    var password = $("#inputPassword").val();
+    // Process Login
+    $("#btnLogin").click(function() {
+        var userName = $("#inputUserName").val();
+        var password = $("#inputPassword").val();
 
-    if (userName == "" || password == "") {
-      alert("Bạn phải nhập tài khoản và mật khẩu!");
-    }
-  });
+        if (userName == "" || password == "") {
+            alert("Bạn phải nhập tài khoản và mật khẩu!");
+        }
+    });
+    $(".js_No").click(function() {
+        $(".Cancel").hide();
+    })
+    $(".Icon_time").click(function() {
+        $(".Cancel").hide();
+    })
+    $(".js_addinf").click(function() {
+        $(".js_add").show();
+    });
+    $(".js_OK").click(function() {
+        $(".js_add").hide();
+    })
+    $(".Icon_time").click(function() {
+        $(".js_add").hide();
+    })
+    $(".js_updateinf").click(function() {
+        $(".js_update").show();
+    });
+    $(".js_ok").click(function() {
+        $(".js_update").hide();
+    })
+    $(".Icon_time").click(function() {
+        $(".js_update").hide();
+    })
 });
 
 

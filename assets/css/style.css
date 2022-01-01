@@ -52,14 +52,9 @@ button {
 }
 
 .btn_link:hover {
-<<<<<<< HEAD
-  color: var(--text-white);
-  background-color: #e26435;
-  cursor: pointer;
-=======
     color: var(--text-white);
     background-color: #e26435;
->>>>>>> 581f74e66bb3d07ef7fb1df1b3c5fb8c8513139a
+    cursor: pointer;
 }
 
 
@@ -427,52 +422,36 @@ button {
 }
 
 .modal_container {
-<<<<<<< HEAD
-  background-color: #fefefe;
-  padding: 15px;
-  border-radius: 3px;
-  width: 30%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+    background-color: #fefefe;
+    padding: 15px;
+    border-radius: 3px;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
 .modal_body {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .modal_icon {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 .modal_btn {
-  font-size: 14px;
-  padding: 7px 10px 8px;
-}
-
-.close {
-  color: #aaaaaa;
-  font-size: 30px;
-  font-weight: bold;
-  float: right;
-=======
-    display: flex;
-    justify-content: space-between;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border-radius: 3px;
-    width: 30%;
+    font-size: 14px;
+    padding: 7px 10px 8px;
 }
 
 .close {
     color: #aaaaaa;
     font-size: 30px;
     font-weight: bold;
->>>>>>> 581f74e66bb3d07ef7fb1df1b3c5fb8c8513139a
+    float: right;
 }
 
 .close:hover,
