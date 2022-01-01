@@ -474,11 +474,15 @@ button {
 }
 
 .staff-add {
-    margin: 20px;
+    border: 1px solid #e26435;
+    color: var(--text-white);
+    background-color: var(--color-primary);
 }
 
 .staff-add:hover {
-    color: #fff;
+    color: var(--text-white);
+    background-color: #e26435;
+    border-color: #e26435;
 }
 
 .staff-table {
@@ -525,5 +529,35 @@ option:hover {
 }
 
 .staff_Cancle:hover {
-    color: #0a58ca;
+    color: var(--color-primary);
+}
+
+.btn_Update {
+    width: 140px;
+    margin: 8px;
+    margin-left: -38px;
+    border: 1px solid #e26435;
+    color: var(--text-white);
+    background-color: var(--color-primary);
+}
+
+.btn_Update:hover {
+    color: var(--text-white);
+    background-color: #e26435;
+    border-color: #e26435;
+}
+
+.Icon_time {
+    width: 27px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--text-white);
+    border-radius: 2px;
+}
+
+.Icon_time:hover {
+    color: var(--text-white);
+    background-color: #e26435;
 }
