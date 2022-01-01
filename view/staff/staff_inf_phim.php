@@ -54,7 +54,7 @@ include_once '../../partials_front/header_nav_staff.php'
         </div>
     </div>
     </section>
-    <section class = "Cancel" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none">
+    <section class = "Cancel" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
     <div class="cancel-container" style = "background-color: #fff;height: 145px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
         <div class="row">
             <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
@@ -63,8 +63,8 @@ include_once '../../partials_front/header_nav_staff.php'
             <div class="col-12" style = "text-align: center;font-size: 16px;margin-top: 15px;margin-left: 5px;margin-bottom: 20px;">
             <h5>Bạn có muốn xóa không?</h5>
             </div>
-            <button type="submit" class="btn btn-primary staff-add" style = "margin-left: 80px;width: 60px;margin-right: 20px;">Yes</button>
-            <button type="submit" class=" js_No btn btn-primary staff-add" style = "margin-left: 0px;width: 60px;">No</button>
+            <button type="submit" class="btn btn-primary staff-add" style = "margin-left: 80px;width: 60px;margin-right: 20px;">Có</button>
+            <button type="submit" class=" js_No btn btn-primary staff-add" style = "margin-left: 0px;width: 60px;">Không</button>
             </div>
         </div>
     </div>
