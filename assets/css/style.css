@@ -52,6 +52,7 @@ button {
 .btn_link:hover {
   color: var(--text-white);
   background-color: #e26435;
+  cursor: pointer;
 }
 
 /* Header */
@@ -409,19 +410,36 @@ button {
 }
 
 .modal_container {
-  display: flex;
-  justify-content: space-between;
   background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
+  padding: 15px;
   border-radius: 3px;
   width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.modal_body {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.modal_icon {
+  font-size: 50px;
+}
+
+.modal_btn {
+  font-size: 14px;
+  padding: 7px 10px 8px;
 }
 
 .close {
   color: #aaaaaa;
   font-size: 30px;
   font-weight: bold;
+  float: right;
 }
 
 .close:hover,

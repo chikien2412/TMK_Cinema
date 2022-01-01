@@ -3,16 +3,6 @@ include_once '../../partials_front/header.php';
 include_once '../../partials_front/header_nav_customer.php';
 ?>
 
-
-<h2>Modal Demo</h2>
-<button class='btn'>Open Modal</button>
-<div class="overlay">
-    <div class="modal_container">
-        <p>Modal Box</p>
-        <i class="close fas fa-times"></i>
-    </div>
-</div>
-
 <div class="tickets container mb-5 mt-4">
     <div class="row">
         <div class="col-8">

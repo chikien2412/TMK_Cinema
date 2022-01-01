@@ -23,6 +23,31 @@ $(document).ready(function () {
     $(".payment").css("display", "none");
   });
 
+  // Modal
+  var modal = $('.overlay');
+  var btn_buy_ticket = $('.btn_buy_ticket');
+  var close = $('.close');
+  var btn_close = $('.btn_close');
+  // window.location.href = "./buy_tickets.php";
+  // btn_buy_ticket.click(function () {
+  //   modal.show();
+  //   // window.location.href = "./buy_tickets.php";
+  // });
+
+  close.click(function () {
+    modal.hide();
+  });
+
+  btn_close.click(function () {
+    modal.hide();
+  });
+
+  $(window).on('click', function (e) {
+    if ($(e.target).is('.modal')) {
+      modal.hide();
+    }
+  });
+
   // Process Login
   $("#btnLogin").click(function () {
     var userName = $("#inputUserName").val();
@@ -41,23 +66,3 @@ $(document).ready(function () {
 // myModal.addEventListener('shown.bs.modal', function () {
 //   myInput.focus()
 // })
-
-$(document).ready(function () {
-  var modal = $('.overlay');
-  var btn = $('.btn');
-  var span = $('.close');
-
-  btn.click(function () {
-    modal.show();
-  });
-
-  span.click(function () {
-    modal.hide();
-  });
-
-  $(window).on('click', function (e) {
-    if ($(e.target).is('.modal')) {
-      modal.hide();
-    }
-  });
-});

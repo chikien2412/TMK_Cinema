@@ -40,7 +40,23 @@ include_once '../../partials_front/header_nav_customer.php';
                             </div>
                         </div>
                         <div class="">
-                            <a href="./buy_tickets.php" class="btn_link">MUA VÉ</a>
+                            <a href="./buy_tickets.php" class="btn_link btn_buy_ticket">MUA VÉ</a>
+                        </div>
+                        <div class="overlay">
+                            <div class="modal_container">
+                                <i class="close fas fa-times"></i>
+                                <div class="modal_body">
+                                    <i class="modal_icon ms-4 far fa-question-circle"></i>
+                                    <p class="modal_content me-4 ms-4">
+                                        <span class="fw-bold pb-4">Bạn phải đăng nhập trước khi mua vé.</span>
+                                        <span>Bạn có muốn đăng nhập không?</span>
+                                    </p>
+                                </div>
+                                <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
+                                    <a href="#" class="btn_link modal_btn">Đăng nhập</a>
+                                    <button type="button" class="btn_link modal_btn btn_close">Quay lại</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
