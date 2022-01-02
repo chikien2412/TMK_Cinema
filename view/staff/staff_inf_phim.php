@@ -3,7 +3,7 @@ include_once '../../partials_front/header.php';
 include_once '../../partials_front/header_nav_staff.php'
 ?>
 
-<section>
+<section class = "js_inf">
     <div class="container" style = 'min-height: 500px'>
         <div class="row" style = 'Height: 300px'>
             <div class=" mt-5 col-12 staff_col">
