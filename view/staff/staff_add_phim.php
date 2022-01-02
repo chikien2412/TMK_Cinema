@@ -101,7 +101,7 @@ include_once '../../partials_front/header_nav_staff.php';
             </div>
         </div>
 </section>
-    <section class = "js_add" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none">
+    <section class = "js_add" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
     <div class="cancel-container" style = "background-color: #fff;height: 130px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
         <div class="row">
         <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">

@@ -433,13 +433,13 @@ button {
 }
 
 .modal_body {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .modal_icon {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 .modal_btn {
