@@ -57,10 +57,26 @@ $(document).ready(function() {
             alert("Bạn phải nhập tài khoản và mật khẩu!");
         }
     });
+    $(".btn_cancel").click(function() {
+        $(".Cancel").show();
+    })
     $(".js_No").click(function() {
         $(".Cancel").hide();
     })
     $(".Icon_time").click(function() {
+        $(".Cancel").hide();
+    })
+    $(".js_yes").click(function() {
+        $(".js_delete").show();
+        $(".Cancel").hide();
+    })
+    $(".js_OK").click(function() {
+        $(".js_delete").hide();
+    })
+    $(".Icon_time").click(function() {
+        $(".js_delete").hide();
+    })
+    $(".js_No").click(function() {
         $(".Cancel").hide();
     })
     $(".js_addinf").click(function() {
