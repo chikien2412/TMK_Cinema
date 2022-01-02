@@ -52,9 +52,9 @@ button {
 }
 
 .btn_link:hover {
-    color: var(--text-white);
-    background-color: #e26435;
-    cursor: pointer;
+  color: var(--text-white);
+  background-color: #e26435;
+  cursor: pointer;
 }
 
 
@@ -422,14 +422,14 @@ button {
 }
 
 .modal_container {
-    background-color: #fefefe;
-    padding: 15px;
-    border-radius: 3px;
-    width: 30%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+  background-color: #fefefe;
+  padding: 15px;
+  border-radius: 3px;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .modal_body {
@@ -443,15 +443,15 @@ button {
 }
 
 .modal_btn {
-    font-size: 14px;
-    padding: 7px 10px 8px;
+  font-size: 14px;
+  padding: 7px 10px 8px;
 }
 
 .close {
-    color: #aaaaaa;
-    font-size: 30px;
-    font-weight: bold;
-    float: right;
+  color: #aaaaaa;
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
 }
 
 .close:hover,

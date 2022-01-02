@@ -12,14 +12,12 @@ include_once '../../partials_front/header_nav_staff.php';
                         <h2>Thông tin khách hàng</h2>
                     </div>
                 </div>
-
             </div>
 
             <div class="container-fluid py-3 " style="width:100% ; overflow: auto; height: auto;">
                 <div class="row">
                     <div class="py-2">
                         <br>
-
                         <div class="">
                             <a href="add.php" class="btn_link"><i class="fas fa-user-plus"></i> THÊM KHÁCH HÀNG</a>
                         </div>
