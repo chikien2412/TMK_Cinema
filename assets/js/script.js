@@ -48,17 +48,45 @@ $(document).ready(function() {
         }
     });
 
+    // Process Login
+    $("#btnLogin").click(function() {
+        var userName = $("#inputUserName").val();
+        var password = $("#inputPassword").val();
+
+        if (userName == "" || password == "") {
+            alert("Bạn phải nhập tài khoản và mật khẩu!");
+        }
+    });
+    $(".btn_cancel").click(function() {
+        $(".Cancel").show();
+    })
     $(".js_No").click(function() {
         $(".Cancel").hide();
     })
     $(".Icon_time").click(function() {
         $(".Cancel").hide();
     })
+    $(".js_yes").click(function() {
+        $(".js_delete").show();
+        $(".Cancel").hide();
+    })
+    $(".js_OK").click(function() {
+        window.location.href = 'http://localhost/tmkcinema/view/staff/staff_inf_phim.php?';
+        $(".js_delete").hide();
+    })
+    $(".Icon_time").click(function() {
+        $(".js_delete").hide();
+    })
+    $(".js_No").click(function() {
+        $(".Cancel").hide();
+    })
     $(".js_addinf").click(function() {
         $(".js_add").show();
     });
     $(".js_OK").click(function() {
+        window.location.href = 'http://localhost/tmkcinema/view/staff/staff_inf_phim.php?';
         $(".js_add").hide();
+
     })
     $(".Icon_time").click(function() {
         $(".js_add").hide();
@@ -68,6 +96,7 @@ $(document).ready(function() {
     });
     $(".js_ok").click(function() {
         $(".js_update").hide();
+        window.location.href = 'http://localhost/tmkcinema/view/staff/staff_inf_phim.php?';
     })
     $(".Icon_time").click(function() {
         $(".js_update").hide();
