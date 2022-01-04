@@ -256,8 +256,8 @@ include_once '../../partials_front/header_nav_customer.php';
                 <div class="container">
                     <form class="row g-3 pt-5 pb-2 px-5">
                         <div class="col-12 d-flex justify-content-between align-items-center">
-                            <label for="inputState" class="form-label mb-0">Hình thức thanh toán:</label>
-                            <select id="inputState" class="form-select payment_input rounded-0">
+                            <label for="inputTypePayment" class="form-label mb-0">Hình thức thanh toán:</label>
+                            <select id="inputTypePayment" class="form-select payment_input rounded-0">
                                 <option selected>Chọn loại thẻ</option>
                                 <option>Thẻ ATM</option>
                                 <option>Ví điện tử MoMo</option>
@@ -283,14 +283,26 @@ include_once '../../partials_front/header_nav_customer.php';
                     </div>
                     <div class="button_container d-flex justify-content-between px-5">
                         <div class="mt-4 text-center">
-                            <button type="button" id="btn-back1" class="btn_link">
+                            <button type="button" id="btnBackPayment" class="btn_link">
                                 QUAY LẠI
                             </button>
                         </div>
                         <div class="mt-4 text-center">
-                            <button type="submit" id="btn-payment" class="btn_link">
+                            <button type="submit" id="btn_payment" class="btn_link">
                                 THANH TOÁN
                             </button>
+                            <div class="overlay modal_payment">
+                                <div class="modal_container large">
+                                    <i class="btn_close fas fa-times"></i>
+
+                                    <div class="modal_body me-4 ms-4">
+                                        <span class="modal_title_main">Vui lòng chọn hình thức thanh toán.</span>
+                                    </div>
+                                    <div class="modal_btn_group d-flex justify-content-around">
+                                        <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -42,8 +42,8 @@ include_once '../../partials_front/header_nav_customer.php';
                         <div class="">
                             <button type="button" class="btn_link btn_buy_ticket">MUA VÉ</button>
                         </div>
-                        <div class="overlay">
-                            <div class="modal_container">
+                        <div class="overlay modal_buy_ticket">
+                            <div class="modal_container large">
                                 <i class="btn_close fas fa-times"></i>
 
                                 <div class="modal_body me-4 ms-4">
@@ -52,7 +52,7 @@ include_once '../../partials_front/header_nav_customer.php';
                                 </div>
                                 <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
                                     <a href="../login.php" class="btn_link modal_btn">Đăng nhập</a>
-                                    <button type="button" class="btn_link modal_btn btn_back">Quay lại</button>
+                                    <button type="button" class="btn_link modal_btn btn_back px-4">Quay lại</button>
                                 </div>
                             </div>
                         </div>

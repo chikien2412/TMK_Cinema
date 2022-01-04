@@ -662,6 +662,10 @@ button {
     position: absolute;
 }
 
+.modal_container.large {
+  width: 30%;
+}
+
 .modal_body {
     display: flex;
     flex-direction: column;

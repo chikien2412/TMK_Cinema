@@ -11,9 +11,9 @@ $(document).ready(function () {
     $(".payment").css("display", "block");
   });
 
-  $("#btn-back1").click(function () {
-    $(".tickets").css("display", "block");
-    $(".chair").css("display", "none");
+  $("#btnBackPayment").click(function () {
+    $(".tickets").css("display", "none");
+    $(".chair").css("display", "block");
     $(".payment").css("display", "none");
   });
 
@@ -22,6 +22,11 @@ $(document).ready(function () {
   var btn_buy_ticket = $(".btn_buy_ticket");
   var btn_close = $(".btn_close");
   var btn_back = $(".btn_back");
+
+  btn_buy_ticket.click(function () {
+    // $(".modal_buy_ticket").show();
+    window.location.href = "./buy_tickets.php";
+  });
 
   btn_close.click(function () {
     modal.hide();
@@ -37,16 +42,12 @@ $(document).ready(function () {
     }
   });
 
-  btn_buy_ticket.click(function () {
-    //   modal.show();
-    window.location.href = "./buy_tickets.php";
-  });
-
+  // JS Check Buy Tickets
   $("#btn-continue1").click(function () {
     if (
-      quantity_child.val() == 0 &&
+      quantity_adult.val() == 0 &&
       quantity_student.val() == 0 &&
-      quantity_adult.val() == 0
+      quantity_child.val() == 0
     ) {
       $(".modal_ticket").show();
     } else {
@@ -56,10 +57,19 @@ $(document).ready(function () {
     }
   });
 
-//   JS Choose Chair
-$(".chair_item").click(function() {
-    $(".chair_item").css("background-color", "green")
-})
+  // JS Check Payment
+  $("#btn_payment").click(function () {
+    if (
+      $("#inputTypePayment").val() == "Chọn loại thẻ"
+    ) {
+      $(".modal_payment").show()
+      }
+      else {
+    //   $(".tickets").css("display", "none");
+    //   $(".chair").css("display", "block");
+    //   $(".payment").css("display", "none");
+    }
+  });
 
   // JS Change Quantity Tickets
   var quantity_adult = $(".input_quantity_adult");
@@ -130,7 +140,7 @@ $(".chair_item").click(function() {
     $(".Cancel").hide();
   });
   $(".js_addinf").click(function () {
-    $(".modal_add_film").show();
+    $(".js_add").show();
   });
   $(".js_OK").click(function () {
     window.location.href =
@@ -193,7 +203,7 @@ checkSigninInput = (input) => {
       if (val.length === 0 || !validateEmail(val)) {
         form_group.classList.add("err");
         form_group.classList.remove("success");
-        err_span.innerHTML = "Email/Số điện thoại không hợp lệ";
+        err_span.innerHTML = "Email không hợp lệ";
       } else {
         form_group.classList.add("success");
         form_group.classList.remove("err");
