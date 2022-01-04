@@ -106,21 +106,13 @@ $(document).ready(function() {
     });
     $(".js_OK").click(function() {
         window.location.href =
-            "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
+            "./staff_inf_phim.php?";
     });
     $(".js_addinf").click(function() {
         $(".modal_add_film").show();
     });
-    $(".js_OK").click(function() {
-        window.location.href =
-            "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
-    });
     $(".js_updateinf").click(function() {
         $(".modal_update_film").show();
-    });
-    $(".js_ok").click(function() {
-        window.location.href =
-            "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
     });
 });
 

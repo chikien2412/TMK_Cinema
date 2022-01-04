@@ -824,3 +824,11 @@ table.dataTable.no-footer {
     padding-top: 20px;
     margin-bottom: 10px;
 }
+
+.dataTables_wrapper .dataTables_length select {
+    background-color: #fff;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    background-color: #fff;
+}
