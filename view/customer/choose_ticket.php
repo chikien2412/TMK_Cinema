@@ -70,6 +70,18 @@ include_once '../../partials_front/header_nav_customer.php';
                             TIẾP TỤC
                             <i class="ms-1 fas fa-arrow-circle-right"></i>
                         </button>
+                        <div class="overlay modal_ticket">
+                            <div class="modal_container">
+                                <i class="btn_close fas fa-times"></i>
+
+                                <div class="modal_body me-4 ms-4">
+                                    <span class="modal_title_main">Vui lòng chọn số lượng vé.</span>
+                                </div>
+                                <div class="modal_btn_group d-flex justify-content-around">
+                                    <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,10 +192,6 @@ include_once '../../partials_front/header_nav_customer.php';
                         <div class="me-2 chair_choose"></div>
                         <span>Có thể chọn</span>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <div class="me-2 chair_choose choose-not"></div>
-                        <span>Không thể chọn</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -220,6 +228,18 @@ include_once '../../partials_front/header_nav_customer.php';
                                 TIẾP TỤC
                                 <i class="ms-1 fas fa-arrow-circle-right"></i>
                             </button>
+                            <div class="overlay modal_chair">
+                                <div class="modal_container">
+                                    <i class="btn_close fas fa-times"></i>
+
+                                    <div class="modal_body me-4 ms-4">
+                                        <span class="modal_title_main">Vui lòng chọn số lượng vé.</span>
+                                    </div>
+                                    <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
+                                        <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
