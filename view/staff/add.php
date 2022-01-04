@@ -71,7 +71,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                 <i class="btn_close fas fa-times"></i>
 
                                 <div class="modal_body me-4 ms-4">
-                                    <span class="modal_title_main">Bạn đã thêm thông tin thành công</span>
+                                    <span class="modal_title_main">Bạn đã thêm thành công</span>
                                 </div>
                                 <div class="modal_btn_group d-flex justify-content-around">
                                     <a href="../staff/home.php" class="btn_link modal_btn btn_back">Đồng ý</a>
