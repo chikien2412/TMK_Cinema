@@ -158,7 +158,7 @@ $(document).ready(function() {
     $(".Icon_time").click(function() {
         $(".js_update").hide();
     });
-});
+}); 
 
 
 // Check input Login
