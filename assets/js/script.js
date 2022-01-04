@@ -26,19 +26,19 @@ $(document).ready(function() {
     // Modal
     var modal = $('.overlay');
     var btn_buy_ticket = $('.btn_buy_ticket');
-    var close = $('.close');
     var btn_close = $('.btn_close');
-    // window.location.href = "./buy_tickets.php";
-    // btn_buy_ticket.click(function () {
-    //   modal.show();
-    //   // window.location.href = "./buy_tickets.php";
-    // });
+    var btn_back = $('.btn_back');
 
-    close.click(function() {
-        modal.hide();
+    btn_buy_ticket.click(function () {
+    //   modal.show();
+      window.location.href = "./buy_tickets.php";
     });
 
     btn_close.click(function() {
+        modal.hide();
+    });
+
+    btn_back.click(function() {
         modal.hide();
     });
 
@@ -48,15 +48,27 @@ $(document).ready(function() {
         }
     });
 
-    // Process Login
-    $("#btnLogin").click(function() {
-        var userName = $("#inputUserName").val();
-        var password = $("#inputPassword").val();
+    // JS Change Quantity Tickets
+    var quantity_adult = $(".input_quantity_adult");
+    var quantity_student = $(".input_quantity_student");
+    var quantity_child = $(".input_quantity_child");
 
-        if (userName == "" || password == "") {
-            alert("Bạn phải nhập tài khoản và mật khẩu!");
-        }
-    });
+    quantity_adult.change(function () {
+        $(".total_price_adult").val(90000*quantity_adult.val());
+        $(".total_price").val(Number($(".total_price_adult").val()) + Number($(".total_price_student").val()) + Number($(".total_price_child").val()));
+    })
+
+    quantity_student.change(function () {
+        $(".total_price_student").val(80000*quantity_student.val());
+        $(".total_price").val(Number($(".total_price_adult").val()) + Number($(".total_price_student").val()) + Number($(".total_price_child").val()));
+    })
+
+    quantity_child.change(function () {
+        $(".total_price_child").val(70000*quantity_child.val());
+        $(".total_price").val(Number($(".total_price_adult").val()) + Number($(".total_price_student").val()) + Number($(".total_price_child").val()));
+    })
+
+    // JS Manage Film
     $(".btn_cancel").click(function() {
         $(".Cancel").show();
     })
@@ -101,20 +113,10 @@ $(document).ready(function() {
     $(".Icon_time").click(function() {
         $(".js_update").hide();
     })
-
-    // Process Login
-    $("#btnLogin").click(function() {
-        var userName = $("#inputUserName").val();
-        var password = $("#inputPassword").val();
-
-        if (userName == "" || password == "") {
-            alert("Bạn phải nhập tài khoản và mật khẩu!");
-        }
-    });
 });
 
 
-// Login
+// Check input Login
 let signin_form = document.querySelector('#signin-form')
 
 let signin_btn = document.querySelector('#signin-btn')
@@ -135,7 +137,7 @@ checkSigninInput = (input) => {
             if (val.length < 6) {
                 form_group.classList.add('err')
                 form_group.classList.remove('success')
-                err_span.innerHTML = 'Password must be at least 6 characters'
+                err_span.innerHTML = 'Mật khẩu phải có ít nhất 6 ký tự'
             } else {
                 form_group.classList.add('success')
                 form_group.classList.remove('err')
@@ -146,7 +148,7 @@ checkSigninInput = (input) => {
             if (val.length === 0 || !validateEmail(val)) {
                 form_group.classList.add('err')
                 form_group.classList.remove('success')
-                err_span.innerHTML = 'Email is invalid'
+                err_span.innerHTML = 'Email/Số điện thoại không hợp lệ'
             } else {
                 form_group.classList.add('success')
                 form_group.classList.remove('err')

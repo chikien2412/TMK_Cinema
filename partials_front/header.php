@@ -17,7 +17,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <link rel="stylesheet" href="../../assets/css/style.css">
-  
+
 
   <title>TMK Cinema</title>
 </head>
@@ -38,8 +38,8 @@
           </form>
       </div>
       <ul class="header_log d-flex position-relative">
-        <li class=""><a href="#" class="header_log_link">Đăng ký</a></li>
-        <li class=""><a href="#" class="header_log_link">Đăng nhập</a></li>
+        <li class=""><a href="../register.php" class="header_log_link">Đăng ký</a></li>
+        <li class=""><a href="../login.php" class="header_log_link">Đăng nhập</a></li>
       </ul>
     </div>
   </header>

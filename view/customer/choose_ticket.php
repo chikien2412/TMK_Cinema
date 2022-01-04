@@ -20,25 +20,25 @@ include_once '../../partials_front/header_nav_customer.php';
                     <tbody>
                         <tr>
                             <th scope="row" class="fw-normal">Người lớn</th>
-                            <td class="text-center"><input type="number" name="" id="" value="0"></td>
+                            <td class="text-center"><input class="input_quantity_adult" type="number" name="" id="" value="0"></td>
                             <td class="text-end">90,000</td>
-                            <td class="text-end">0</td>
+                            <td class="text-end"><input class="total_price_adult bg-transparent border-0 text-end" type="text" name="" id="" value="0" disabled></td>
                         </tr>
                         <tr>
                             <th scope="row" class="fw-normal">Sinh viên</th>
-                            <td class="text-center"><input type="number" name="" id="" value="0"></td>
+                            <td class="text-center"><input class="input_quantity_student" type="number" name="" id="" value="0"></td>
                             <td class="text-end">80,000</td>
-                            <td class="text-end">0</td>
+                            <td class="text-end"><input class="total_price_student bg-transparent border-0 text-end" type="text" name="" id="" value="0" disabled></td>
                         </tr>
                         <tr>
                             <th scope="row" class="fw-normal">Trẻ em</th>
-                            <td class="text-center"><input type="number" name="" id="" value="0"></td>
-                            <td class="text-end">70,000</td>
-                            <td class="text-end">0</td>
+                            <td class="text-center"><input class="input_quantity_child" type="number" name="" id="" value="0"></td>
+                            <td class="text-end price_child">70,000</td>
+                            <td class="text-end"><input class="total_price_child bg-transparent border-0 text-end" type="text" name="" id="" value="0" disabled></td>
                         </tr>
                         <tr>
                             <th scope="row" colspan="3" class=" choose_ticket-sum">Tổng</th>
-                            <td class="text-end choose_ticket-sum">0</td>
+                            <td class="text-end choose_ticket-sum"><input class="total_price w-100 bg-transparent border-0 text-end" type="text" name="" id="" value="0" disabled></td>
                         </tr>
                     </tbody>
                 </table>

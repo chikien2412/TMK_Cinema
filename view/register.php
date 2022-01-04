@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body id="login_container" style="">
+<body id="login_container">
 
     <div class="login_form" id="signin-form">
-        <a href="#" class="form-logo">
-            <img src="../assets/img/logo.png" alt="company logo">
-        </a>
+        <div class="register_heading">Đăng ký tài khoản</div>
+        <div class="form-group">
+            <input type="text" class="form-input" placeholder="Họ và tên">
+        </div>
         <div class="form-group">
             <input type="email" class="form-input" placeholder="Email/Số điện thoại" id="signin-email">
             <span class="form-input-icon err">
@@ -45,14 +46,29 @@
             </span>
             <span class="form-input-err-msg" data-err-for="signin-password"></span>
         </div>
-        <div class="form-group form-group-checkbox">
-            <input type="checkbox" name="remember" id="remember" checked="checked">
-            <label for="remember">
-                Ghi nhớ tài khoản
-                <i class='bx bx-check'></i>
-            </label>
-        </div>
-        <button type="submit" class="form-btn" id="signin-btn">Đăng nhập</button>
+        <form class="row g-3 pt-5 pb-2 px-5">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputState" class="form-label mb-0">Hình thức thanh toán:</label>
+                <select id="inputState" class="form-select payment_input rounded-0">
+                    <option selected>Chọn loại thẻ</option>
+                    <option>Thẻ ATM</option>
+                    <option>Ví điện tử MoMo</option>
+                </select>
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputAddress" class="form-label mb-0">Họ và Tên:</label>
+                <input type="text" class="form-control payment_input rounded-0" id="inputAddress">
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputAddress2" class="form-label mb-0">Email:</label>
+                <input type="email" class="form-control payment_input rounded-0" id="inputAddress2">
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputCity" class="form-label mb-0">Số điện thoại:</label>
+                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+            </div>
+        </form>
+        <button type="submit" class="form-btn" id="signin-btn">Đăng ký</button>
         <span class="form-delimiter">
             hoặc kết nối với
         </span>
@@ -67,11 +83,8 @@
             </a>
         </div>
         <span class="form-txt">
-            Bạn chưa có tài khoản?
-            <a href="./register.php">Đăng ký!</a>
-        </span>
-        <span class="form-txt">
-            <a href="#">Quên mật khẩu?</a>
+            Bạn đã có tài khoản?
+            <a href="./login.php">Đăng nhập!</a>
         </span>
     </div>
 
