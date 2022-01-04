@@ -59,15 +59,12 @@ $(document).ready(function () {
 
   // JS Check Payment
   $("#btn_payment").click(function () {
-    if (
-      $("#inputTypePayment").val() == "Chọn loại thẻ"
-    ) {
-      $(".modal_payment").show()
-      }
-      else {
-    //   $(".tickets").css("display", "none");
-    //   $(".chair").css("display", "block");
-    //   $(".payment").css("display", "none");
+    if ($("#inputTypePayment").val() == "Chọn loại thẻ") {
+      $(".modal_payment").show();
+    } else {
+      //   $(".tickets").css("display", "none");
+      //   $(".chair").css("display", "block");
+      //   $(".payment").css("display", "none");
     }
   });
 
@@ -105,68 +102,32 @@ $(document).ready(function () {
 
   // JS Manage Film
   $(".btn_cancel").click(function () {
-    $(".Cancel").show();
-  });
-  $(".js_No").click(function () {
-    $(".Cancel").hide();
-  });
-  $(".js_No1").click(function () {
-    $(".Cancel").hide();
-  });
-  $(".Icon_time").click(function () {
-    $(".Cancel").hide();
+    $(".modal_delete_film").show();
   });
   $(".js_yes").click(function () {
-    $(".js_delete").show();
-    $(".Cancel").hide();
-  });
-  $(".js_yes1").click(function () {
-    $(".js_delete1").show();
-    $(".Cancel").hide();
-  });
-  $(".js_OK").click(function () {
-    window.location.href =
-      "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
-    $(".js_delete").hide();
-  });
-  $(".js_OK1").click(function () {
-    window.location.href = "http://localhost/tmkcinema/view/staff/home.php?";
-    $(".js_delete1").hide();
-  });
-  $(".Icon_time").click(function () {
-    $(".js_delete").hide();
+    $(".modal_js_delete").show();
+    $(".modal_delete_film").hide();
   });
   $(".js_No").click(function () {
-    $(".Cancel").hide();
-  });
-  $(".js_addinf").click(function () {
-    $(".js_add").show();
+    $(".modal_delete_film").hide();
   });
   $(".js_OK").click(function () {
     window.location.href =
       "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
-    $(".js_add").hide();
   });
-  $(".Icon_time").click(function () {
-    $(".js_add").hide();
+  $(".js_addinf").click(function () {
+    $(".modal_add_film").show();
   });
-  $(".js_updateinf").click(function () {
-    $(".js_update").show();
-  });
-  $(".js_update1").click(function () {
-    $(".js_update2").show();
-  });
-  $(".js_OK2").click(function () {
-    $(".js_update2").hide();
-    window.location.href = "http://localhost/tmkcinema/view/staff/home.php?";
-  });
-  $(".js_ok").click(function () {
-    $(".js_update").hide();
+  $(".js_OK").click(function () {
     window.location.href =
       "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
   });
-  $(".Icon_time").click(function () {
-    $(".js_update").hide();
+  $(".js_updateinf").click(function () {
+    $(".modal_update_film").show();
+  });
+  $(".js_ok").click(function () {
+    window.location.href =
+      "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
   });
 });
 

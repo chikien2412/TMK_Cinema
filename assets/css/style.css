@@ -684,7 +684,7 @@ button {
 }
 
 .modal_btn_group {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .modal_btn {
@@ -766,6 +766,7 @@ button {
     width: 100%;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
+    padding: 5.25px 10.5px;
 }
 
 .staff_date:focus {
@@ -781,6 +782,7 @@ button {
     width: 100%;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
+    padding: 5.25px 7.5px;
 }
 
 .staff_ComB:focus {
@@ -812,4 +814,17 @@ option:hover {
     color: var(--text-white);
     background-color: #e26435;
     border-color: #e26435;
+}
+
+table.dataTable thead th {
+    padding: 10px 9px;
+}
+
+.dataTables_wrapper {
+    padding-bottom: 20px;
+}
+
+table.dataTable.no-footer {
+    padding-top: 20px;
+    margin-bottom: 10px;
 }
