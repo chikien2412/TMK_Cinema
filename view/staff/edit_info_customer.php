@@ -75,7 +75,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <span class="modal_title_main">Bạn đã sửa thành công</span>
                                 </div>
                                 <div class="modal_btn_group d-flex justify-content-around">
-                                <a href="../staff/home.php" class="btn_link modal_btn btn_back" >Đồng ý</a>    
+                                <a href="../staff/info_customer.php" class="btn_link modal_btn btn_back" >Đồng ý</a>    
                                 
                                 </div>
                             </div>
