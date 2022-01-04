@@ -29,9 +29,9 @@ $(document).ready(function() {
     var btn_close = $('.btn_close');
     var btn_back = $('.btn_back');
 
-    btn_buy_ticket.click(function () {
-    //   modal.show();
-      window.location.href = "./buy_tickets.php";
+    btn_buy_ticket.click(function() {
+        //   modal.show();
+        window.location.href = "./buy_tickets.php";
     });
 
     btn_close.click(function() {
@@ -53,18 +53,18 @@ $(document).ready(function() {
     var quantity_student = $(".input_quantity_student");
     var quantity_child = $(".input_quantity_child");
 
-    quantity_adult.change(function () {
-        $(".total_price_adult").val(90000*quantity_adult.val());
+    quantity_adult.change(function() {
+        $(".total_price_adult").val(90000 * quantity_adult.val());
         $(".total_price").val(Number($(".total_price_adult").val()) + Number($(".total_price_student").val()) + Number($(".total_price_child").val()));
     })
 
-    quantity_student.change(function () {
-        $(".total_price_student").val(80000*quantity_student.val());
+    quantity_student.change(function() {
+        $(".total_price_student").val(80000 * quantity_student.val());
         $(".total_price").val(Number($(".total_price_adult").val()) + Number($(".total_price_student").val()) + Number($(".total_price_child").val()));
     })
 
-    quantity_child.change(function () {
-        $(".total_price_child").val(70000*quantity_child.val());
+    quantity_child.change(function() {
+        $(".total_price_child").val(70000 * quantity_child.val());
         $(".total_price").val(Number($(".total_price_adult").val()) + Number($(".total_price_student").val()) + Number($(".total_price_child").val()));
     })
 
@@ -104,7 +104,7 @@ $(document).ready(function() {
         $(".Cancel").hide();
     })
     $(".js_addinf").click(function() {
-        $(".js_add").show();
+        $(".overlay").show();
     });
     $(".js_OK").click(function() {
         window.location.href = 'http://localhost/tmkcinema/view/staff/staff_inf_phim.php?';
@@ -150,7 +150,7 @@ checkSigninInput = (input) => {
     let val = input.value.trim()
     let form_group = input.parentElement
 
-    switch(input.getAttribute('type')) {
+    switch (input.getAttribute('type')) {
         case 'password':
             if (val.length < 6) {
                 form_group.classList.add('err')

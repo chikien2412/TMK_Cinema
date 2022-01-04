@@ -92,6 +92,18 @@ include_once '../../partials_front/header_nav_staff.php';
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                         <button class=" js_addinf btn me-md-2 staff-add  " style="width: 140px; margin: 8px;margin-left: -38px;" type="button">Xác
                             nhận</button>
+                            <div class="overlay">
+                            <div class="modal_container">
+                                <i class="btn_close fas fa-times"></i>
+
+                                <div class="modal_body me-4 ms-4">
+                                    <span class="modal_title_main">Bạn đã thêm thành công.</span>
+                                </div>
+                                <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
+                                    <button type="button" class="btn_link modal_btn btn_back; px-3">OK</button>
+                                </div>
+                            </div>
+                        </div>
                         <form action="../staff/staff_inf_phim.php" method="get">
                             <button class="btn staff-add " style="width: 140px; margin: 8px;" type="submit">Quay
                                 lại</button>
@@ -101,7 +113,7 @@ include_once '../../partials_front/header_nav_staff.php';
             </div>
         </div>
 </section>
-    <section class = "js_add" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
+    <!-- <section class = "js_add" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
     <div class="cancel-container" style = "background-color: #fff;height: 145px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
         <div class="row">
         <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end" style = "margin-left: -18px;margin-top: 20px;">
@@ -114,7 +126,7 @@ include_once '../../partials_front/header_nav_staff.php';
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <?php
 include_once '../../partials_front/footer.php'
 ?>
