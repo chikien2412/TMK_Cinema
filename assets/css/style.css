@@ -663,7 +663,7 @@ button {
 }
 
 .modal_container.large {
-  width: 30%;
+    width: 30%;
 }
 
 .modal_body {
@@ -811,33 +811,49 @@ option:hover {
 }
 
 .btn_Update:hover {
-  color: var(--text-white);
-  background-color: #e26435;
-  border-color: #e26435;
+    color: var(--text-white);
+    background-color: #e26435;
+    border-color: #e26435;
 }
 
 .Icon_time {
-  width: 27px;
-  padding: 2px;
-  margin: 2px;
-  text-align: center;
-  background-color: var(--color-primary);
-  color: var(--text-white);
-  border-radius: 2px;
+    width: 27px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--text-white);
+    border-radius: 2px;
 }
 
 .Icon_time:hover {
-  color: var(--text-white);
-  background-color: #e26435;
+    color: var(--text-white);
+    background-color: #e26435;
 }
-.table.dataTable{
-  padding-top: 15px;
-  margin-bottom: 15px;
+
+.table.dataTable {
+    padding-top: 15px;
+    margin-bottom: 15px;
 }
-.table.dataTable thead th{
-  padding: 12px;
-  
+
+.table.dataTable thead th {
+    padding: 12px;
 }
-.table.dataTable tbody th, table.dataTable tbody td {
-  padding: 8px 14px;
+
+.table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 8px 14px;
+}
+
+table.dataTable.no-footer {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    background-color: #fff;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    background-color: #fff;
 }
