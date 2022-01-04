@@ -19,7 +19,7 @@ include_once '../../partials_front/header_nav_staff.php';
                     <div class="py-2">
                         <br>
                         <div class="">
-                            <a href="add.php" class="btn_link"><i class="fas fa-user-plus"></i> THÊM KHÁCH HÀNG</a>
+                            <a href="add_info_customer.php" class="btn_link"><i class="fas fa-user-plus"></i> THÊM KHÁCH HÀNG</a>
                         </div>
 
                         </br>
@@ -49,7 +49,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer.php"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -60,7 +60,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -71,7 +71,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -82,7 +82,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -93,41 +93,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
-
-                                </tr>
-
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
-
-                                </tr>
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
-
-                                </tr>
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -139,7 +105,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -150,19 +116,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
-
-                                </tr>
-
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -173,7 +127,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -185,7 +139,7 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -196,7 +150,53 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit_info_customer"class=""><i class="fas fa-edit"></i></a></td>
                                     <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
@@ -230,7 +230,7 @@ $('#example').DataTable( {
     <div class="cancel-container" style="background-color: #fff;height: 145px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
         <div class="row">
             <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
-                <button type="submit" class="Icon_time"><i class="fas fa-times"></i></button>
+                <button type="submit" style="margin-top: -18; "> <i class="btn_close fas fa-times"></i></button>
             </div>
             <div class="col-12" style="text-align: center;font-size: 16px;margin-top: 15px;margin-left: 5px;margin-bottom: 20px;">
                 <h5>Bạn có muốn xóa không?</h5>

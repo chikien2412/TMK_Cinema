@@ -120,7 +120,7 @@ $(document).ready(function() {
         $(".js_delete").hide();
     });
     $(".js_OK1").click(function() {
-        window.location.href = "http://localhost/tmkcinema/view/staff/home.php?";
+        window.location.href = "../../view/staff/info_customer.php";
         $(".js_delete1").hide();
     });
     $(".Icon_time").click(function() {
@@ -148,7 +148,7 @@ $(document).ready(function() {
     });
     $(".js_OK2").click(function() {
         $(".js_update2").hide();
-        window.location.href = "http://localhost/tmkcinema/view/staff/home.php?";
+        window.location.href = "../../view/staff/info_customer.php";
     });
     $(".js_ok").click(function() {
         $(".js_update").hide();
