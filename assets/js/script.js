@@ -94,27 +94,42 @@ $(document).ready(function() {
     });
 
     // JS Manage Film
-    $(".js_No1").click(function() {
-        $(".Cancel").hide();
-    });
+    //     $(".btn_cancel").click(function() {
+    //         $(".Cancel").show();
+    //     });
+    //     $(".js_No").click(function() {
+    //         $(".Cancel").hide();
+    //     });
+    //     $(".js_No1").click(function() {
+    //         $(".Cancel").hide();
+    //     });
+    //     $(".Icon_time").click(function() {
+    //         $(".Cancel").hide();
+    //     });
 
-    $(".js_yes1").click(function() {
-        $(".js_delete1").show();
-        $(".Cancel").hide();
-    });
-    $(".js_OK1").click(function() {
-        window.location.href = "../../view/staff/info_customer.php";
-        $(".js_delete1").hide();
-    });
-    $(".js_update1").click(function() {
-        $(".js_update2").show();
-    });
-    $(".js_OK2").click(function() {
-        $(".js_update2").hide();
-        window.location.href = "../../view/staff/info_customer.php";
-    });
+    //     $(".js_yes1").click(function() {
+    //         $(".js_delete1").show();
+    //         $(".Cancel").hide();
+    //     });
+    //     $(".js_OK1").click(function() {
+    //         window.location.href = "../../view/staff/info_customer.php";
+    //         $(".js_delete1").hide();
+    //     });
+    //     $(".Icon_time").click(function() {
+    //         $(".js_delete").hide();
+    //     });
+    //     $(".js_No").click(function() {
+    //         $(".Cancel").hide();
+    //     });
+    //     $(".js_update1").click(function() {
+    //         $(".js_update2").show();
+    //     });
+    //     $(".js_OK2").click(function() {
+    //         $(".js_update2").hide();
+    //         window.location.href = "../../view/staff/info_customer.php";
+    //     });
 });
-$(".btn_cancel").click(function() {
+$(".btn_Cancel").click(function() {
     $(".modal_delete_film").show();
 });
 $(".js_yes").click(function() {
