@@ -77,7 +77,7 @@ include_once '../../partials_front/header_nav_customer.php';
                                 <div class="modal_body me-4 ms-4">
                                     <span class="modal_title_main">Vui lòng chọn số lượng vé.</span>
                                 </div>
-                                <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
+                                <div class="modal_btn_group d-flex justify-content-around">
                                     <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
                                 </div>
                             </div>

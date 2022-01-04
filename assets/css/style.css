@@ -311,8 +311,8 @@ button {
 .header_log::before {
     content: "";
     position: absolute;
-    top: 1px;
-    right: 75px;
+    top: 2px;
+    right: 84px;
     border-color: rgb(80, 80, 80);
     border-style: solid;
     border-width: 10px 1px;
@@ -321,6 +321,7 @@ button {
 .header_log_link {
     margin-left: 15px;
     color: rgb(99, 99, 99);
+    font-size: 16px;
 }
 
 .header_log_link:hover {
@@ -654,7 +655,7 @@ button {
     background-color: #fefefe;
     padding: 15px;
     border-radius: 5px;
-    width: 30%;
+    width: 20%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -665,7 +666,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .modal_title_main {
@@ -676,6 +677,10 @@ button {
 
 .modal_icon {
     font-size: 50px;
+}
+
+.modal_btn_group {
+  margin: 10px 0;
 }
 
 .modal_btn {

@@ -19,14 +19,14 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body id="login_container" style="">
+<body id="login_container">
 
     <div class="login_form" id="signin-form">
         <a href="#" class="form-logo">
             <img src="../assets/img/logo.png" alt="company logo">
         </a>
         <div class="form-group">
-            <input type="email" class="form-input" placeholder="Email/Số điện thoại" id="signin-email">
+            <input type="email" class="form-input" placeholder="Email" id="signin-email">
             <span class="form-input-icon err">
                 <i class='bx bx-error-circle'></i>
             </span>

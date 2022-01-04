@@ -130,7 +130,7 @@ $(".chair_item").click(function() {
     $(".Cancel").hide();
   });
   $(".js_addinf").click(function () {
-    $(".js_add").show();
+    $(".modal_add_film").show();
   });
   $(".js_OK").click(function () {
     window.location.href =
