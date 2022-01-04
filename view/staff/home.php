@@ -29,8 +29,8 @@ include_once '../../partials_front/header_nav_staff.php';
                             <thead>
                                 <tr class="table-info">
                                     <th scope="col">Họ tên</th>
-                                    <th scope="col">Ngày sinh</th>
-                                    <th scope="col">Số điện thoại</th>
+                                    <th data-orderable="false" scope="col">Ngày sinh</th>
+                                    <th data-orderable="false" scope="col">Số điện thoại</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Địa chỉ</th>
                                     <th scope="col">Giới tính</th>
