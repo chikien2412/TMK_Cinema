@@ -102,15 +102,15 @@ include_once '../../partials_front/header_nav_staff.php'
         </div>
 </section>
 <section class = "js_update" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
-    <div class="cancel-container" style = "background-color: #fff;height: 130px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
+    <div class="cancel-container" style = "background-color: #fff;height: 145px;margin-left: 38%;margin-right: 38%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
         <div class="row">
-        <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
-                <button type="submit" class = "Icon_time"><i class="fas fa-times"></i></button>
+        <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end" style = "margin-left: -18px;margin-top: 20px;">
+        <i class=" Icon_time btn_close fas fa-times"></i>
             </div>
             <div class="col-12" style = "text-align: center;font-size: 16px;margin-top: 15px;margin-left: 5px;">
             <h5>Bạn đã cập nhập thành công</h5>
             </div>
-            <button type="submit" class="js_ok btn btn-primary staff-add" style = "margin: 20px ;margin-left: 110px;width: 75px;">OK</button>
+            <button type="submit" class="js_ok btn btn-primary staff-add" style = "margin: 20px ;margin-left: 142px;width: 75px;">OK</button>
             </div>
         </div>
     </div>
