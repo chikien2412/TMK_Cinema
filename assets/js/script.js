@@ -94,7 +94,7 @@ $(document).ready(function() {
     });
 
     // JS Manage Film
-    
+
     $(".btn_cancel").click(function() {
         $(".modal_delete_film").show();
     });
@@ -105,7 +105,7 @@ $(document).ready(function() {
     $(".js_No").click(function() {
         $(".Cancel").hide();
     });
-   
+
     $(".Icon_time").click(function() {
         $(".Cancel").hide();
     });
@@ -136,12 +136,53 @@ $(document).ready(function() {
         $(".js_add").hide();
     });
     $(".js_updateinf").click(function() {
-        $(".js_update").show();
+        $(".modal_update_film").show();
     });
-  
-   
+
+
     $(".js_ok").click(function() {
         $(".js_update").hide();
+        $(".js_update1").click(function() {
+            $(".js_update2").show();
+        });
+        $(".js_OK2").click(function() {
+            $(".js_update2").hide();
+            window.location.href = "../../view/staff/info_customer.php";
+        });
+
+        $(".btn_Cancel").click(function() {
+            $(".modal_delete_film").show();
+        });
+        $(".js_yes").click(function() {
+            $(".modal_js_delete").show();
+            $(".modal_delete_film").hide();
+        });
+        $(".js_No").click(function() {
+            $(".modal_delete_film").hide();
+        });
+        $(".js_OK").click(function() {
+            window.location.href =
+                "./staff_inf_phim.php?";
+        });
+        $(".Icon_time").click(function() {
+            $(".js_update").hide();
+        });
+    });
+    // JS customer
+    $(".btn_cancel1").click(function() {
+        $(".Cancel").show();
+    });
+    $(".js_No1").click(function() {
+        $(".Cancel").hide();
+    });
+    $(".js_yes1").click(function() {
+        $(".js_delete1").show();
+        $(".Cancel").hide();
+    });
+    $(".js_OK1").click(function() {
+        window.location.href = "../../view/staff/info_customer.php";
+        $(".js_delete1").hide();
+    });
     $(".js_update1").click(function() {
         $(".js_update2").show();
     });
@@ -149,104 +190,63 @@ $(document).ready(function() {
         $(".js_update2").hide();
         window.location.href = "../../view/staff/info_customer.php";
     });
+    // Check input Login
+    let signin_form = document.querySelector("#signin-form");
 
-    $(".btn_Cancel").click(function() {
-        $(".modal_delete_film").show();
+    let signin_btn = document.querySelector("#signin-btn");
+
+    validateEmail = (email) => {
+        const re =
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        return re.test(String(email).toLowerCase());
+    };
+
+    checkSigninInput = (input) => {
+        let err_span = signin_form.querySelector(`span[data-err-for="${input.id}"]`);
+        let val = input.value.trim();
+        let form_group = input.parentElement;
+
+        switch (input.getAttribute("type")) {
+            case "password":
+                if (val.length < 6) {
+                    form_group.classList.add("err");
+                    form_group.classList.remove("success");
+                    err_span.innerHTML = "Mật khẩu phải có ít nhất 6 ký tự";
+                } else {
+                    form_group.classList.add("success");
+                    form_group.classList.remove("err");
+                    err_span.innerHTML = "";
+                }
+                break;
+            case "email":
+                if (val.length === 0 || !validateEmail(val)) {
+                    form_group.classList.add("err");
+                    form_group.classList.remove("success");
+                    err_span.innerHTML = "Email không hợp lệ";
+                } else {
+                    form_group.classList.add("success");
+                    form_group.classList.remove("err");
+                    err_span.innerHTML = "";
+                }
+        }
+    };
+
+    checkSigninForm = () => {
+        let inputs = signin_form.querySelectorAll(".form-input");
+        inputs.forEach((input) => checkSigninInput(input));
+    };
+
+    signin_btn.onclick = () => {
+        checkSigninForm();
+    };
+
+    let inputs = signin_form.querySelectorAll(".form-input");
+    inputs.forEach((input) => {
+        input.addEventListener("focusout", () => {
+            checkSigninInput(input);
+        });
     });
-    $(".js_yes").click(function() {
-        $(".modal_js_delete").show();
-        $(".modal_delete_film").hide();
-    });
-    $(".js_No").click(function() {
-        $(".modal_delete_film").hide();
-    });
-    $(".js_OK").click(function() {
-        window.location.href =
-            "./staff_inf_phim.php?";
-    });
-    $(".Icon_time").click(function() {
-        $(".js_update").hide();
-    });
-}); 
-// JS customer
-$(".btn_cancel1").click(function() {
-    $(".Cancel").show();
-});
-$(".js_No1").click(function() {
-    $(".Cancel").hide();
-});
-$(".js_yes1").click(function() {
-    $(".js_delete1").show();
-    $(".Cancel").hide();
-});
-$(".js_OK1").click(function() {
-    window.location.href = "../../view/staff/info_customer.php";
-    $(".js_delete1").hide();
-});
-$(".js_update1").click(function() {
-    $(".js_update2").show();
-});
-$(".js_OK2").click(function() {
-    $(".js_update2").hide();
-    window.location.href = "../../view/staff/info_customer.php";
-});
-// Check input Login
-let signin_form = document.querySelector("#signin-form");
-
-let signin_btn = document.querySelector("#signin-btn");
-
-validateEmail = (email) => {
-  const re =
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  return re.test(String(email).toLowerCase());
-};
-
-checkSigninInput = (input) => {
-  let err_span = signin_form.querySelector(`span[data-err-for="${input.id}"]`);
-  let val = input.value.trim();
-  let form_group = input.parentElement;
-
-  switch (input.getAttribute("type")) {
-    case "password":
-      if (val.length < 6) {
-        form_group.classList.add("err");
-        form_group.classList.remove("success");
-        err_span.innerHTML = "Mật khẩu phải có ít nhất 6 ký tự";
-      } else {
-        form_group.classList.add("success");
-        form_group.classList.remove("err");
-        err_span.innerHTML = "";
-      }
-      break;
-    case "email":
-      if (val.length === 0 || !validateEmail(val)) {
-        form_group.classList.add("err");
-        form_group.classList.remove("success");
-        err_span.innerHTML = "Email không hợp lệ";
-      } else {
-        form_group.classList.add("success");
-        form_group.classList.remove("err");
-        err_span.innerHTML = "";
-      }
-  }
-};
-
-checkSigninForm = () => {
-  let inputs = signin_form.querySelectorAll(".form-input");
-  inputs.forEach((input) => checkSigninInput(input));
-};
-
-signin_btn.onclick = () => {
-  checkSigninForm();
-};
-
-let inputs = signin_form.querySelectorAll(".form-input");
-inputs.forEach((input) => {
-  input.addEventListener("focusout", () => {
-    checkSigninInput(input);
-  });
-});
     $(".js_addinf").click(function() {
         $(".modal_add_film").show();
     });
@@ -254,6 +254,5 @@ inputs.forEach((input) => {
         $(".modal_update_film").show();
     });
 
-    
-});
 
+});
