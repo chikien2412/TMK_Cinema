@@ -48,7 +48,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -64,7 +64,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -80,7 +80,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -96,7 +96,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -112,7 +112,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -128,7 +128,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -144,7 +144,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -160,7 +160,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -176,7 +176,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -192,7 +192,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -208,7 +208,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none;"> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
@@ -224,7 +224,7 @@ include_once '../../partials_front/header_nav_staff.php'
                             <td class='staff-row'>2021</td>
                             <td><a href="../staff/staff_update_phim.php" class=" staff_Cancle  ms-1"><i
                                         class="fas fa-edit"></i></a></td>
-                            <td><button type="submit" class="btn_Cancel staff_Cancle  ms-1"
+                            <td><button type="submit" class="btn_cancel staff_Cancle  ms-1"
                                     style="border: none;background: none; "> <i class="fas fa-trash-alt"></i></button>
                             </td>
                         </tr>
