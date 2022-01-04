@@ -234,12 +234,12 @@ $('#example').DataTable( {
             <span class="modal_title_main">Bạn có muốn xóa không?</span>
         </div>
         <div class="modal_btn_group d-flex justify-content-around px-5">
-            <button type="button" class="js_yes btn_link modal_btn btn_back px-4">Có</button>
+            <button type="button" class="js_yes1 btn_link modal_btn btn_back px-4">Có</button>
             <button type="button" class=" btn_link modal_btn btn_back">Không</button>
         </div>
     </div>
 </div>
-<div class="overlay js_delete">
+<div class="overlay js_delete1">
     <div class="modal_container">
         <i class="btn_close fas fa-times"></i>
 
