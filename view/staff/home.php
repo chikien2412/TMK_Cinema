@@ -64,14 +64,31 @@ $(document).ready(function() {
     $('#example').DataTable();
 });
 </script>
-<section class = "Cancel" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none">
+<section class = "Cancel" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
     <div class="cancel-container" style = "background-color: #fff;height: 145px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
         <div class="row">
-            <div class="col-12" style = "text-align: center;font-size: 16px;margin-top: 30px;margin-left: 5px;">
+            <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class = "Icon_time"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="col-12" style = "text-align: center;font-size: 16px;margin-top: 15px;margin-left: 5px;margin-bottom: 20px;">
             <h5>Bạn có muốn xóa không?</h5>
             </div>
-            <button type="submit" class="btn btn-primary staff-add" style = "margin-left: 125px;width: 50px;">Yes</button>
-            <button type="submit" class=" js_No btn btn-primary staff-add" style = "margin-left: 0px;width: 50px;">No</button>
+            <button type="submit" class="js_yes1 btn btn-primary staff-add " style = "margin-left: 80px;width: 60px;margin-right: 20px;">Có</button>
+            <button type="submit" class=" js_No1 btn btn-primary staff-add" style = "margin-left: 0px;width: 60px;">Không</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class = "js_delete1" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
+    <div class="cancel-container" style = "background-color: #fff;height: 130px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">
+        <div class="row">
+        <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class = "Icon_time"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="col-12" style = "text-align: center;font-size: 16px;margin-top: 15px;margin-left: 5px;">
+            <h5>Bạn đã xóa thành công</h5>
+            </div>
+            <button type="submit" class="js_OK1 btn btn-primary staff-add " style = "margin :20px;margin-left: 110px;width: 75px;">OK</button>
             </div>
         </div>
     </div>
