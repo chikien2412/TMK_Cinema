@@ -25,17 +25,17 @@ include_once '../../partials_front/header_nav_staff.php';
                         </br>
 
 
-                        <table class="table table-hover table-striped" id="example">
+                        <table class="table table-hover table-striped" id="example" >
                             <thead>
                                 <tr class="table-info">
                                     <th scope="col">Họ tên</th>
                                     <th data-orderable="false" scope="col">Ngày sinh</th>
                                     <th data-orderable="false" scope="col">Số điện thoại</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Địa chỉ</th>
-                                    <th scope="col">Giới tính</th>
-                                    <th scope="col">Sửa</th>
-                                    <th scope="col">Xóa</th>
+                                    <th data-orderable="false" scope="col">Email</th>
+                                    <th data-orderable="false" scope="col">Địa chỉ</th>
+                                    <th data-orderable="false" scope="col">Giới tính</th>
+                                    <th data-orderable="false" scope="col">Sửa</th>
+                                    <th data-orderable="false" scope="col">Xóa</th>
 
 
                                 </tr>
@@ -49,8 +49,155 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <td>lck@gmail.com</td>
                                     <td>Thái Nguyên</td>
                                     <td>Nam</td>
-                                    <td><a href="edit.php"class="ms-3"><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel staff_Cancle ms-3" style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+
+                                </tr>
+                                <tr >
+                                    <td>Lương Chí Kiên</td>
+                                    <td>24/12/2001</td>
+                                    <td>0395123123</td>
+                                    <td>lck@gmail.com</td>
+                                    <td>Thái Nguyên</td>
+                                    <td>Nam</td>
+                                    <td><a href="edit.php"class=""><i class="fas fa-edit"></i></a></td>
+                                    <td><button type="submit" class = "btn_cancel staff_Cancle " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
 
                                 </tr>
                             </tbody>
@@ -60,9 +207,23 @@ include_once '../../partials_front/header_nav_staff.php';
             </div>
 </main>
 <script>
-$(document).ready(function() {
-    $('#example').DataTable();
-});
+$('#example').DataTable( {
+        "language": {
+            "infoFiltered": "(được lọc từ _MAX_ bản ghi)",
+                "info": "Hiển thị trang _PAGE_ trong tổng _PAGES_ trang",
+                "infoEmpty": "Không có dữ liệu",
+                "lengthMenu": "Hiển thị _MENU_ dữ liệu",
+                "loadingRecords": "Đang tải...",
+"paginate": {
+                    "first": "Đầu tiên",
+                    "last": "Cuối cùng",
+                    "next": "Sau",
+                    "previous": "Trước"
+                },
+                "search": "Tìm kiếm:",
+                "zeroRecords": "Không tìm thấy kết quả",
+        }
+    } );
 </script>
 <section class = "Cancel" style = "position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none; background-color: rgba(0, 0, 0, 0.4);">
     <div class="cancel-container" style = "background-color: #fff;height: 145px;margin-left: 40%;margin-right: 40%;padding-bottom: 100px;border-radius: 10px;margin-top: 20%;">

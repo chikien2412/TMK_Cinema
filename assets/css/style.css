@@ -809,3 +809,14 @@ option:hover {
   color: var(--text-white);
   background-color: #e26435;
 }
+.table.dataTable{
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.table.dataTable thead th{
+  padding: 12px;
+  
+}
+.table.dataTable tbody th, table.dataTable tbody td {
+  padding: 8px 14px;
+}
