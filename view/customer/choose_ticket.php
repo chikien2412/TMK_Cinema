@@ -20,19 +20,19 @@ include_once '../../partials_front/header_nav_customer.php';
                     <tbody>
                         <tr>
                             <th scope="row" class="fw-normal">Người lớn</th>
-                            <td class="text-center"><input class="input_quantity_adult" type="number" name="" id="" value="0"></td>
+                            <td class="text-center"><input class="input_quantity_adult" type="number" min="0" name="" id="" value="0"></td>
                             <td class="text-end">90,000</td>
                             <td class="text-end"><input class="total_price_adult bg-transparent border-0 text-end" type="text" name="" id="" value="0" disabled></td>
                         </tr>
                         <tr>
                             <th scope="row" class="fw-normal">Sinh viên</th>
-                            <td class="text-center"><input class="input_quantity_student" type="number" name="" id="" value="0"></td>
+                            <td class="text-center"><input class="input_quantity_student" type="number" min="0" name="" id="" value="0"></td>
                             <td class="text-end">80,000</td>
                             <td class="text-end"><input class="total_price_student bg-transparent border-0 text-end" type="text" name="" id="" value="0" disabled></td>
                         </tr>
                         <tr>
                             <th scope="row" class="fw-normal">Trẻ em</th>
-                            <td class="text-center"><input class="input_quantity_child" type="number" name="" id="" value="0"></td>
+                            <td class="text-center"><input class="input_quantity_child" type="number" min="0" name="" id="" value="0"></td>
                             <td class="text-end price_child">70,000</td>
                             <td class="text-end"><input class="total_price_child bg-transparent border-0 text-end" type="text" name="" id="" value="0" disabled></td>
                         </tr>
@@ -71,11 +71,11 @@ include_once '../../partials_front/header_nav_customer.php';
                             <i class="ms-1 fas fa-arrow-circle-right"></i>
                         </button>
                         <div class="overlay modal_ticket">
-                            <div class="modal_container">
+                            <div class="modal_container large">
                                 <i class="btn_close fas fa-times"></i>
 
                                 <div class="modal_body me-4 ms-4">
-                                    <span class="modal_title_main">Vui lòng chọn số lượng vé.</span>
+                                    <span class="modal_title_main">Bạn vui lòng chọn số lượng vé.</span>
                                 </div>
                                 <div class="modal_btn_group d-flex justify-content-around">
                                     <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
@@ -229,11 +229,11 @@ include_once '../../partials_front/header_nav_customer.php';
                                 <i class="ms-1 fas fa-arrow-circle-right"></i>
                             </button>
                             <div class="overlay modal_chair">
-                                <div class="modal_container">
+                                <div class="modal_container large">
                                     <i class="btn_close fas fa-times"></i>
 
                                     <div class="modal_body me-4 ms-4">
-                                        <span class="modal_title_main">Vui lòng chọn số lượng vé.</span>
+                                        <span class="modal_title_main">Bạn vui lòng chọn ghế ngồi.</span>
                                     </div>
                                     <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
                                         <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
@@ -257,23 +257,23 @@ include_once '../../partials_front/header_nav_customer.php';
                     <form class="row g-3 pt-5 pb-2 px-5">
                         <div class="col-12 d-flex justify-content-between align-items-center">
                             <label for="inputTypePayment" class="form-label mb-0">Hình thức thanh toán:</label>
-                            <select id="inputTypePayment" class="form-select payment_input rounded-0">
+                            <select id="inputTypePayment" class="form-select payment_input rounded-0" required>
                                 <option selected>Chọn loại thẻ</option>
                                 <option>Thẻ ATM</option>
                                 <option>Ví điện tử MoMo</option>
                             </select>
                         </div>
                         <div class="col-12 d-flex justify-content-between align-items-center">
-                            <label for="inputAddress" class="form-label mb-0">Họ và Tên:</label>
-                            <input type="text" class="form-control payment_input rounded-0" id="inputAddress">
+                            <label for="inputNamePayment" class="form-label mb-0">Họ và Tên:</label>
+                            <input type="text" class="form-control payment_input rounded-0" id="inputNamePayment" required>
                         </div>
                         <div class="col-12 d-flex justify-content-between align-items-center">
-                            <label for="inputAddress2" class="form-label mb-0">Email:</label>
-                            <input type="email" class="form-control payment_input rounded-0" id="inputAddress2">
+                            <label for="inputEmailPayment" class="form-label mb-0">Email:</label>
+                            <input type="email" class="form-control payment_input rounded-0" id="inputEmailPayment" required>
                         </div>
                         <div class="col-12 d-flex justify-content-between align-items-center">
-                            <label for="inputCity" class="form-label mb-0">Số điện thoại:</label>
-                            <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+                            <label for="inputPhonePayment" class="form-label mb-0">Số điện thoại:</label>
+                            <input type="text" class="form-control payment_input rounded-0" id="inputPhonePayment" required>
                         </div>
                     </form>
                     <div class="px-5 my-3 payment_article">
@@ -296,10 +296,35 @@ include_once '../../partials_front/header_nav_customer.php';
                                     <i class="btn_close fas fa-times"></i>
 
                                     <div class="modal_body me-4 ms-4">
-                                        <span class="modal_title_main">Vui lòng chọn hình thức thanh toán.</span>
+                                        <span class="modal_title_main">Bạn vui lòng chọn hình thức thanh toán.</span>
                                     </div>
                                     <div class="modal_btn_group d-flex justify-content-around">
                                         <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay modal_payment_info">
+                                <div class="modal_container large">
+                                    <i class="btn_close fas fa-times"></i>
+
+                                    <div class="modal_body me-4 ms-4">
+                                        <span class="modal_title_main">Bạn vui lòng nhập thông tin để thanh toán.</span>
+                                    </div>
+                                    <div class="modal_btn_group d-flex justify-content-around">
+                                        <button type="button" class="btn_link modal_btn btn_back">Đồng ý</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay modal_payment_scc">
+                                <div class="modal_container large">
+                                    <i class="btn_close fas fa-times"></i>
+
+                                    <div class="modal_body mx-3">
+                                        <span class="modal_title_main">Bạn đã thanh toán và đặt vé thành công.</span>
+                                        <span>Bạn có thể vào thông tin cá nhân để xem thông tin vé.</span>
+                                    </div>
+                                    <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
+                                        <a href="./home.php" class="btn_link modal_btn">Quay về trang chủ</a>
                                     </div>
                                 </div>
                             </div>
