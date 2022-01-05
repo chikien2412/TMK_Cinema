@@ -110,7 +110,7 @@ include_once '../../partials_front/header_nav_staff.php';
 
                         <form action="../staff/staff_inf_phim.php" method="get">
                             <button class="btn staff-add " style="width: 140px; margin: 8px;margin-left: 35px;margin-right: 115px"
-                                type="submit">Quaylại</button>
+                                type="submit">Quay lại</button>
                         </form>
                     </div>
                 </div>
