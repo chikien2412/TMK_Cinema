@@ -23,7 +23,7 @@
 
     <div class="login_form" id="signin-form">
         <div class="register_heading">Đăng ký tài khoản</div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <input type="text" class="form-input" placeholder="Họ và tên">
         </div>
         <div class="form-group">
@@ -45,26 +45,52 @@
                 <i class='bx bx-check-circle'></i>
             </span>
             <span class="form-input-err-msg" data-err-for="signin-password"></span>
-        </div>
+        </div> -->
         <form class="row g-3 pt-5 pb-2 px-5">
-            <div class="col-12 d-flex justify-content-between align-items-center">
+            <!-- <div class="col-12 d-flex justify-content-between align-items-center">
                 <label for="inputState" class="form-label mb-0">Hình thức thanh toán:</label>
                 <select id="inputState" class="form-select payment_input rounded-0">
                     <option selected>Chọn loại thẻ</option>
                     <option>Thẻ ATM</option>
                     <option>Ví điện tử MoMo</option>
                 </select>
-            </div>
+            </div> -->
             <div class="col-12 d-flex justify-content-between align-items-center">
                 <label for="inputAddress" class="form-label mb-0">Họ và Tên:</label>
                 <input type="text" class="form-control payment_input rounded-0" id="inputAddress">
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputCity" class="form-label mb-0">Số điện thoại:</label>
+                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
             </div>
             <div class="col-12 d-flex justify-content-between align-items-center">
                 <label for="inputAddress2" class="form-label mb-0">Email:</label>
                 <input type="email" class="form-control payment_input rounded-0" id="inputAddress2">
             </div>
             <div class="col-12 d-flex justify-content-between align-items-center">
-                <label for="inputCity" class="form-label mb-0">Số điện thoại:</label>
+                <label for="inputCity" class="form-label mb-0">Mật khẩu:</label>
+                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputCity" class="form-label mb-0">Ngày sinh:</label>
+                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputCity" class="form-label mb-0">Giới tính:</label>
+                <!-- <input type="text" class="form-control payment_input rounded-0" id="inputCity"> -->
+                <div class="col-sm-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Nam
+                    </label>
+                    <input class="form-check-input ms-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label " for="flexRadioDefault1">
+                        Nữ
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <label for="inputCity" class="form-label mb-0">Địa chỉ:</label>
                 <input type="text" class="form-control payment_input rounded-0" id="inputCity">
             </div>
         </form>
