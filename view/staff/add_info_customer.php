@@ -12,42 +12,42 @@ include_once '../../partials_front/header_nav_staff.php';
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-9">
-                <div class="ms-3 mb-3 row d-flex justify-content-center">
+                <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Họ và tên:</label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control">
 
                     </div>
                 </div>
-                <div class="ms-3 mb-3 row d-flex justify-content-center">
+                <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Ngày sinh:</label>
                     <div class="col-sm-6">
                         <input type="date" class="form-control">
 
                     </div>
                 </div>
-                <div class="ms-3 mb-3 row d-flex justify-content-center">
+                <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Số điện thoại:</label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control">
 
                     </div>
                 </div>
-                <div class="ms-3 mb-3 row d-flex justify-content-center">
+                <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Email:</label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control">
 
                     </div>
                 </div>
-                <div class="ms-3 mb-3 row d-flex justify-content-center">
+                <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Địa chỉ:</label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control">
 
                     </div>
                 </div>
-                <div class="ms-3 mb-3 row d-flex justify-content-center">
+                <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Giới tính:</label>
                     <div class="col-sm-6">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -62,11 +62,9 @@ include_once '../../partials_front/header_nav_staff.php';
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6" style="margin-left: 300px;margin-top: 20px; margin-bottom: 20px;">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                            <button class=" js_update1 btn me-md-2 staff-add  " style="width: 140px; margin: 8px;"
-                                type="button">Xác
-                                nhận</button>
+                    <div class="col-12">
+                        <div class="gap-2 d-md-flex justify-content-md-center my-4">
+                            <button class=" js_update1 btn staff-add me-4" style="width: 140px;" type="button">Xác nhận</button>
                             <div class="overlay js_update2">
                                 <div class="modal_container">
                                     <i class="btn_close fas fa-times"></i>
@@ -75,17 +73,12 @@ include_once '../../partials_front/header_nav_staff.php';
                                         <span class="modal_title_main">Bạn đã thêm thành công.</span>
                                     </div>
                                     <div class="modal_btn_group d-flex justify-content-around px-5">
-                                        <button type="button"
-                                            class="js_OK1 btn_link modal_btn btn_back px-5">OK</button>
+                                        <button type="button" class="js_OK1 btn_link modal_btn btn_back px-5">OK</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <form action="../staff/info_customer.php" method="get">
-                                <button class="btn staff-add "
-                                    style="width: 140px; margin: 8px;margin-left: 35px;margin-right: 115px"
-                                    type="submit">Quay lại</button>
-                            </form>
+                            <a href="../staff/info_customer.php" class="btn staff-add " style="width: 140px;" type="submit">Quay lại</a>
                         </div>
                     </div>
                 </div>
