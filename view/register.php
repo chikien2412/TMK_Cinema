@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
     <!--BOXICONS-->
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <!--APP CSS-->
@@ -21,84 +24,56 @@
 
 <body id="login_container">
 
-    <div class="login_form" id="signin-form">
+    <div class="login_form register_form" id="signin-form">
         <div class="register_heading">Đăng ký tài khoản</div>
-        <!-- <div class="form-group">
-            <input type="text" class="form-input" placeholder="Họ và tên">
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-input" placeholder="Email/Số điện thoại" id="signin-email">
-            <span class="form-input-icon err">
-                <i class='bx bx-error-circle'></i>
-            </span>
-            <span class="form-input-icon success">
-                <i class='bx bx-check-circle'></i>
-            </span>
-            <span class="form-input-err-msg" data-err-for="signin-email"></span>
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-input" placeholder="Mật khẩu" id="signin-password">
-            <span class="form-input-icon err">
-                <i class='bx bx-error-circle'></i>
-            </span>
-            <span class="form-input-icon success">
-                <i class='bx bx-check-circle'></i>
-            </span>
-            <span class="form-input-err-msg" data-err-for="signin-password"></span>
-        </div> -->
-        <form class="row g-3 pt-5 pb-2 px-5">
-            <!-- <div class="col-12 d-flex justify-content-between align-items-center">
-                <label for="inputState" class="form-label mb-0">Hình thức thanh toán:</label>
-                <select id="inputState" class="form-select payment_input rounded-0">
-                    <option selected>Chọn loại thẻ</option>
-                    <option>Thẻ ATM</option>
-                    <option>Ví điện tử MoMo</option>
-                </select>
-            </div> -->
-            <div class="col-12 d-flex justify-content-between align-items-center">
+        <form class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
                 <label for="inputAddress" class="form-label mb-0">Họ và Tên:</label>
-                <input type="text" class="form-control payment_input rounded-0" id="inputAddress">
+                <input type="text" class="form-control register_input rounded-0" id="inputAddress" required>
             </div>
-            <div class="col-12 d-flex justify-content-between align-items-center">
+            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
                 <label for="inputCity" class="form-label mb-0">Số điện thoại:</label>
-                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+                <input type="text" class="form-control register_input rounded-0" id="inputCity">
             </div>
-            <div class="col-12 d-flex justify-content-between align-items-center">
+            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
                 <label for="inputAddress2" class="form-label mb-0">Email:</label>
-                <input type="email" class="form-control payment_input rounded-0" id="inputAddress2">
+                <input type="email" class="form-control register_input rounded-0" id="inputAddress2">
             </div>
-            <div class="col-12 d-flex justify-content-between align-items-center">
+            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
                 <label for="inputCity" class="form-label mb-0">Mật khẩu:</label>
-                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+                <input type="password" class="form-control register_input rounded-0" id="inputCity">
             </div>
-            <div class="col-12 d-flex justify-content-between align-items-center">
+            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
                 <label for="inputCity" class="form-label mb-0">Ngày sinh:</label>
-                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+                <input type="date" class="form-control register_input rounded-0 text-uppercase" id="inputCity">
             </div>
-            <div class="col-12 d-flex justify-content-between align-items-center">
-                <label for="inputCity" class="form-label mb-0">Giới tính:</label>
-                <!-- <input type="text" class="form-control payment_input rounded-0" id="inputCity"> -->
-                <div class="col-sm-6">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
+            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+                <label class="form-label mb-0">Giới tính:</label>
+                <div class="d-flex justify-content-start" style="width: 250px">
+                    <input class="form-check-input" type="radio" name="inputGender" id="flexRadioDefault1">
+                    <label class="form-check-label me-4 ms-1" for="flexRadioDefault1">
                         Nam
                     </label>
-                    <input class="form-check-input ms-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label " for="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="inputGender" id="flexRadioDefault2">
+                    <label class="form-check-label ms-1" for="flexRadioDefault2">
                         Nữ
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex justify-content-between align-items-center">
+            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
                 <label for="inputCity" class="form-label mb-0">Địa chỉ:</label>
-                <input type="text" class="form-control payment_input rounded-0" id="inputCity">
+                <input type="text" class="form-control register_input rounded-0" id="inputCity">
+            </div>
+            <div class="col-12 d-flex align-items-center mb-2">
+                <input type="checkbox" class="" id="inputRules" name="" value="" checked>
+                <label class="ms-3" for="inputRules">Tôi đã đọc và đồng ý với <a href="#" class="rules_link">Điều khoản sử dụng của TMK</a></label>
             </div>
         </form>
         <button type="submit" class="form-btn" id="signin-btn">Đăng ký</button>
         <span class="form-delimiter">
             hoặc kết nối với
         </span>
-        <div class="form-social">
+        <div class="form-social mb-3">
             <a href="#" class="form-social-item fb">
                 <i class='bx bxl-facebook'></i>
                 <span>Facebook</span>
@@ -108,7 +83,7 @@
                 <span>Google</span>
             </a>
         </div>
-        <span class="form-txt">
+        <span class="form-txt mt-0">
             Bạn đã có tài khoản?
             <a href="./login.php">Đăng nhập!</a>
         </span>
