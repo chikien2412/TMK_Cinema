@@ -2,10 +2,10 @@
     <div class="container h-100">
         <ul class="nav justify-content-around align-items-center h-100">
             <li class="nav-item nav-item-line-staff position-relative">
-                <a class="nav-link" href="#">KHÁCH HÀNG</a>
+                <a class="nav-link" href="./info_customer.php">KHÁCH HÀNG</a>
             </li>
             <li class="nav-item nav-item-line-staff position-relative">
-                <a class="nav-link" href="../../view/staff/staff_inf_phim.php">PHIM</a>
+                <a class="nav-link" href="./staff_inf_phim.php">PHIM</a>
             </li>
             <li class="nav-item nav-item-line-staff position-relative">
                 <a class="nav-link" href="#">VÉ</a>

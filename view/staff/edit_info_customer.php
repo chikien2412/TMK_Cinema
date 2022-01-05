@@ -47,9 +47,8 @@ include_once '../../partials_front/header_nav_staff.php';
                         <label class="form-check-label" for="flexRadioDefault1">
                             Nam
                         </label>
-                        <input class="form-check-input ms-5" type="radio" name="flexRadioDefault"
-                            id="flexRadioDefault1">
-                        <label class="form-check-label " for="flexRadioDefault1">
+                        <input class="form-check-input ms-5" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label " for="flexRadioDefault2">
                             Nữ
                         </label>
 
