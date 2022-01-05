@@ -41,13 +41,6 @@ include_once '../../partials_front/header_nav_staff.php';
                     </div>
                 </div>
                 <div class="mb-3 row d-flex justify-content-center align-items-center">
-                    <label for="inputPassword" class="col-sm-2 ">Địa chỉ:</label>
-                    <div class="col-sm-6">
-                        <input type="text" class="form-control">
-
-                    </div>
-                </div>
-                <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Giới tính:</label>
                     <div class="col-sm-6">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -61,6 +54,14 @@ include_once '../../partials_front/header_nav_staff.php';
 
                     </div>
                 </div>
+                <div class="mb-3 row d-flex justify-content-center align-items-center">
+                    <label for="inputPassword" class="col-sm-2 ">Địa chỉ:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control">
+
+                    </div>
+                </div>
+                
                 <div class="row">
                     <div class="col-12">
                         <div class="gap-2 d-md-flex justify-content-md-center my-4">
