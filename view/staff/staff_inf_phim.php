@@ -22,7 +22,7 @@ include_once '../../partials_front/header_nav_staff.php'
                 <table class="table table-hover table-striped" id="example">
                     <thead>
                         <tr class="table-success">
-                            <th scope="col">Tên phim</th>
+                            <th scope="col" data-orderable="false">Tên phim</th>
                             <th scope="col">Mô tả</th>
                             <th scope="col">Thể Loại</th>
                             <th scope="col">Thời lượng</th>

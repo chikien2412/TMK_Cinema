@@ -57,14 +57,27 @@ $(document).ready(function () {
     }
   });
 
+  // JS Check Chair
+  let chair = $(".chair_item");
+  for (let elem in chair) {
+    chair[elem].onclick = function () {
+      // chair[elem].style.background = "#dbdee1";
+      chair[elem].style.background = "green";
+    };
+  };
+
   // JS Check Payment
   $("#btn_payment").click(function () {
     if ($("#inputTypePayment").val() == "Chọn loại thẻ") {
       $(".modal_payment").show();
+    } else if (
+      $("#inputNamePayment").val() == "" ||
+      $("#inputEmailPayment").val() == "" ||
+      $("#inputPhonePayment").val() == ""
+    ) {
+      $(".modal_payment_info").show();
     } else {
-      //   $(".tickets").css("display", "none");
-      //   $(".chair").css("display", "block");
-      //   $(".payment").css("display", "none");
+      $(".modal_payment_scc").show();
     }
   });
 
@@ -112,22 +125,19 @@ $(document).ready(function () {
     $(".modal_delete_film").hide();
   });
   $(".js_OK").click(function () {
-    window.location.href =
-      "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
+    window.location.href = "./staff_inf_phim.php";
   });
   $(".js_addinf").click(function () {
     $(".modal_add_film").show();
   });
   $(".js_OK").click(function () {
-    window.location.href =
-      "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
+    window.location.href = "./staff_inf_phim.php";
   });
   $(".js_updateinf").click(function () {
     $(".modal_update_film").show();
   });
   $(".js_ok").click(function () {
-    window.location.href =
-      "http://localhost/tmkcinema/view/staff/staff_inf_phim.php?";
+    window.location.href = "./staff_inf_phim.php";
   });
 });
 

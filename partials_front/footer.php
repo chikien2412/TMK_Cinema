@@ -1,6 +1,6 @@
 <section class="footer bg-white">
   <div class="container text-center">
-    <p>Designed by <a href="#">TMK team</a></p>
+    <p>Designed by <a href="#">TMK Team</a></p>
   </div>
 </section>
 
