@@ -4,6 +4,9 @@
             <img src="../../assets/img/slider_spiderman.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="3000">
+            <img src="../../assets/img/slider_quydu.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
             <img src="../../assets/img/slider_rungthemang.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="3000">

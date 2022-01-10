@@ -62,7 +62,7 @@ button {
 
 :root {
   --main-color: #2980b9;
-  --form-bg: rgba(0, 0, 0, 0.8);
+  --form-bg: rgba(255, 255, 255, 0.8);
   --border-color: #2980b9;
   --form-color: #000;
   --form-input-bg: rgba(2, 2, 2, 0.22);
@@ -79,14 +79,15 @@ button {
   place-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: #020221;
+  background-position: top;
+  /* background-color: #020221; */
+  /* background-image: "../assets/img/backgr.jpg"; */
   user-select: none;
 }
 
 .login_form {
   padding: 40px 60px;
-  background-color: #fff;
+  background-color: var(--form-bg);
   border-radius: var(--border-radius);
   color: var(--form-color);
   text-align: center;
@@ -286,13 +287,13 @@ button {
 
 /* Register */
 .register_form {
-padding: 25px 60px;
+  padding: 25px 60px;
 }
 
 .register_heading {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .register_input {
@@ -309,8 +310,8 @@ padding: 25px 60px;
 }
 
 .form-check-input:checked {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .rules_link {

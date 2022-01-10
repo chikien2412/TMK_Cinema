@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body id="login_container">
+<body id="login_container" style="background-image: url(https://lh5.googleusercontent.com/-GE_ndinJdLI/V3iYwhibeqI/AAAAAAAAAiU/pD58x52DvAEwWPa5o0mCOVsVGnBZpr5LgCLcB/s1600/Avengers%2BSTARTUANIT-Hinh-Nen-Phim-Bom-Tan-Cho-May-Tinh.jpg);">
 
     <div class="login_form register_form" id="signin-form">
         <div class="register_heading">Đăng ký tài khoản</div>

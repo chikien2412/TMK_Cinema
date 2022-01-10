@@ -37,25 +37,25 @@ include_once '../../partials_front/slider.php';
             </div>
             <div class="col-4">
                 <div class="product_item rounded-2">
-                    <a class="product_link" href="#">
-                        <img class="w-100 rounded-top" src="../../assets/img/pr_spiderman.jpg" alt="">
-                        <div class="product_name rounded-bottom">SPIDER-MAN: NO WAY HOME</div>
+                    <a class="product_link" href="./details_film.php">
+                        <img class="w-100 rounded-top" src="../../assets/img/pr_quydu.jpg" alt="">
+                        <div class="product_name rounded-bottom">RESIDENT EVIL: WELCOME TO RACCOON CITY</div>
                     </a>
                 </div>
             </div>
             <div class="col-4">
                 <div class="product_item rounded-2">
                     <a class="product_link" href="#">
-                        <img class="w-100 rounded-top" src="../../assets/img/pr_spiderman.jpg" alt="">
-                        <div class="product_name rounded-bottom">SPIDER-MAN: NO WAY HOME</div>
+                        <img class="w-100 rounded-top" src="../../assets/img/pr_khongphailucchet.jpg" alt="">
+                        <div class="product_name rounded-bottom">NO TIME TO DIE</div>
                     </a>
                 </div>
             </div>
             <div class="col-4">
                 <div class="product_item rounded-2">
                     <a class="product_link" href="#">
-                        <img class="w-100 rounded-top" src="../../assets/img/pr_spiderman.jpg" alt="">
-                        <div class="product_name rounded-bottom">SPIDER-MAN: NO WAY HOME</div>
+                        <img class="w-100 rounded-top" src="../../assets/img/pr_rungthemang.jpg" alt="">
+                        <div class="product_name rounded-bottom">RỪNG THẾ MẠNG</div>
                     </a>
                 </div>
             </div>

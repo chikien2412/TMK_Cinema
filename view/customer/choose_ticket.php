@@ -51,11 +51,11 @@ include_once '../../partials_front/header_nav_customer.php';
                     <div class="product_name">SPIDER-MAN: NO WAY HOME</div>
                     <div class="film_info-item mt-2">
                         Rạp:
-                        <span></span>
+                        <span>Mipec Tower</span>
                     </div>
                     <div class="film_info-item">
-                        Xuất chiếu:
-                        <span></span>
+                        Suất chiếu:
+                        <span>22:30 | Thứ tư, 05/01/2022</span>
                     </div>
                     <div class="film_info-item">
                         Ghế:
@@ -63,7 +63,7 @@ include_once '../../partials_front/header_nav_customer.php';
                     </div>
                     <div class="film_info-item-sum">
                         Tổng:
-                        <span>0 VNĐ</span>
+                        <span>90 000 VNĐ</span>
                     </div>
                     <div class="mt-4 text-center">
                         <button type="button" id="btn-continue1" class="btn_link">
@@ -96,63 +96,7 @@ include_once '../../partials_front/header_nav_customer.php';
                 <div class="choose_ticket-heading">CHỌN GHẾ</div>
                 <div class="mt-5 mb-4 mx-5 d-flex flex-column align-items-center">
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">A</li>
-                        <?php
-                        for ($i = 1; $i <= 15; $i++) {
-                            echo '<li class="chair_item">' . $i . '</li>';
-                        }
-                        ?>
-                    </ul>
-                    <ul class="chair_list d-flex">
-                        <li class="chair_item">B</li>
-                        <?php
-                        for ($i = 1; $i <= 15; $i++) {
-                            echo '<li class="chair_item">' . $i . '</li>';
-                        }
-                        ?>
-                    </ul>
-                    <ul class="chair_list d-flex">
-                        <li class="chair_item">C</li>
-                        <?php
-                        for ($i = 1; $i <= 15; $i++) {
-                            echo '<li class="chair_item">' . $i . '</li>';
-                        }
-                        ?>
-                    </ul>
-                    <ul class="chair_list d-flex">
-                        <li class="chair_item">D</li>
-                        <?php
-                        for ($i = 1; $i <= 15; $i++) {
-                            echo '<li class="chair_item">' . $i . '</li>';
-                        }
-                        ?>
-                    </ul>
-                    <ul class="chair_list d-flex">
-                        <li class="chair_item">E</li>
-                        <?php
-                        for ($i = 1; $i <= 15; $i++) {
-                            echo '<li class="chair_item">' . $i . '</li>';
-                        }
-                        ?>
-                    </ul>
-                    <ul class="chair_list d-flex">
-                        <li class="chair_item">F</li>
-                        <?php
-                        for ($i = 1; $i <= 15; $i++) {
-                            echo '<li class="chair_item">' . $i . '</li>';
-                        }
-                        ?>
-                    </ul>
-                    <ul class="chair_list d-flex">
-                        <li class="chair_item">G</li>
-                        <?php
-                        for ($i = 1; $i <= 15; $i++) {
-                            echo '<li class="chair_item">' . $i . '</li>';
-                        }
-                        ?>
-                    </ul>
-                    <ul class="chair_list d-flex">
-                        <li class="chair_item">H</li>
+                        <li class="chair_item">K</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -168,7 +112,63 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">K</li>
+                        <li class="chair_item">H</li>
+                        <?php
+                        for ($i = 1; $i <= 15; $i++) {
+                            echo '<li class="chair_item">' . $i . '</li>';
+                        }
+                        ?>
+                    </ul>
+                    <ul class="chair_list d-flex">
+                        <li class="chair_item">G</li>
+                        <?php
+                        for ($i = 1; $i <= 15; $i++) {
+                            echo '<li class="chair_item">' . $i . '</li>';
+                        }
+                        ?>
+                    </ul>
+                    <ul class="chair_list d-flex">
+                        <li class="chair_item">F</li>
+                        <?php
+                        for ($i = 1; $i <= 15; $i++) {
+                            echo '<li class="chair_item">' . $i . '</li>';
+                        }
+                        ?>
+                    </ul>
+                    <ul class="chair_list d-flex">
+                        <li class="chair_item">E</li>
+                        <?php
+                        for ($i = 1; $i <= 15; $i++) {
+                            echo '<li class="chair_item">' . $i . '</li>';
+                        }
+                        ?>
+                    </ul>
+                    <ul class="chair_list d-flex">
+                        <li class="chair_item">D</li>
+                        <?php
+                        for ($i = 1; $i <= 15; $i++) {
+                            echo '<li class="chair_item">' . $i . '</li>';
+                        }
+                        ?>
+                    </ul>
+                    <ul class="chair_list d-flex">
+                        <li class="chair_item">C</li>
+                        <?php
+                        for ($i = 1; $i <= 15; $i++) {
+                            echo '<li class="chair_item">' . $i . '</li>';
+                        }
+                        ?>
+                    </ul>
+                    <ul class="chair_list d-flex">
+                        <li class="chair_item">B</li>
+                        <?php
+                        for ($i = 1; $i <= 15; $i++) {
+                            echo '<li class="chair_item">' . $i . '</li>';
+                        }
+                        ?>
+                    </ul>
+                    <ul class="chair_list d-flex">
+                        <li class="chair_item">A</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -202,19 +202,19 @@ include_once '../../partials_front/header_nav_customer.php';
                     <div class="product_name">SPIDER-MAN: NO WAY HOME</div>
                     <div class="film_info-item mt-2">
                         Rạp:
-                        <span></span>
+                        <span>Mipec Tower</span>
                     </div>
                     <div class="film_info-item">
                         Xuất chiếu:
-                        <span></span>
+                        <span>22:30 | Thứ tư, 05/01/2022</span>
                     </div>
                     <div class="film_info-item">
                         Ghế:
-                        <span></span>
+                        <span>A2</span>
                     </div>
                     <div class="film_info-item-sum">
                         Tổng:
-                        <span>0 VNĐ</span>
+                        <span>90 000 VNĐ</span>
                     </div>
                     <div class="button_container d-flex justify-content-between">
                         <div class="mt-4 text-center">
