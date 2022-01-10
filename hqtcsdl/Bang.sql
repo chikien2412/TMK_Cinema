@@ -1,0 +1,98 @@
+﻿CREATE DATABASE DB_TMK
+
+-- Bảng Khách hàng
+CREATE TABLE KHACHHANG
+(
+    MaKH INT IDENTITY(1, 1) PRIMARY KEY,
+    HoTen NVARCHAR(30),
+    NgaySinh DATE,
+    SDT CHAR(10),
+    DiaChi NVARCHAR(50),
+    Email VARCHAR(30),
+    GioiTinh BIT,
+    Matkhau VARCHAR(20)
+);
+
+-- Bảng Nhân viên
+CREATE TABLE NHANVIEN
+(
+    MaNV VARCHAR(10) PRIMARY KEY,
+    HoTen NVARCHAR(30),
+    NgaySinh DATE,
+    SDT CHAR(10),
+    DiaChi NVARCHAR(50),
+    Email VARCHAR(30),
+    GioiTinh BIT,
+    MatKhau VARCHAR(20)
+)
+
+-- Bảng Loại phim
+CREATE TABLE LOAIPHIM
+(
+    MaLP VARCHAR(10) PRIMARY KEY,
+    TenLP NVARCHAR(50)
+);
+
+-- Bảng Phim
+CREATE TABLE PHIM
+(
+    MaPhim INT IDENTITY(1, 1) PRIMARY KEY,
+    TenPhim NVARCHAR(50),
+    MoTa NVARCHAR(100),
+    DienVien NVARCHAR(50),
+    DaoDien NVARCHAR(50),
+    ThoiLuong INT,
+    NgayKC DATE,
+    MaLP VARCHAR(10) FOREIGN KEY REFERENCES dbo.LOAIPHIM (MaLP)
+);
+
+-- Bảng Loại vé
+CREATE TABLE LOAIVE
+(
+    MaLV VARCHAR(10) PRIMARY KEY,
+    TenLV NVARCHAR(30),
+    DonGia FLOAT
+)
+
+-- Bảng Vé
+CREATE TABLE VE
+(
+    MaVe INT IDENTITY(1, 1) PRIMARY KEY,
+    Ghe VARCHAR(10),
+    NgayBanVe DATE,
+    MaLV VARCHAR(10) FOREIGN KEY REFERENCES dbo.LOAIVE (MaLV),
+    MaNV VARCHAR(10) FOREIGN KEY REFERENCES dbo.NHANVIEN (MaNV),
+    MaKH INT FOREIGN KEY REFERENCES dbo.KHACHHANG (MaKH),
+)
+
+-- Bảng Rạp chiếu
+CREATE TABLE RAPCHIEU
+(
+    MaRap VARCHAR(10) PRIMARY KEY,
+    TenRap NVARCHAR(50),
+    SDT CHAR(10),
+    DiaChi NVARCHAR(100)
+);
+
+-- Bảng Phòng chiếu
+CREATE TABLE PHONGCHIEU
+(
+    MaPhong VARCHAR(10),
+    TenPhong NVARCHAR(30),
+    MaRap VARCHAR(10) FOREIGN KEY REFERENCES RAPCHIEU (MaRap),
+    PRIMARY KEY (MaPhong, MaRap)
+);
+
+-- Bảng Chi tiết chiếu phim
+CREATE TABLE CHITIETCHIEUPHIM
+(
+    MaVe INT,
+    MaPhong VARCHAR(10),
+    MaRap VARCHAR(10),
+    MaPhim INT,
+    TGChieu DATETIME,
+    FOREIGN KEY (MaVe) REFERENCES dbo.VE (MaVe),
+    FOREIGN KEY (MaPhim) REFERENCES dbo.PHIM (MaPhim),
+    FOREIGN KEY (MaPhong, MaRap) REFERENCES dbo.PHONGCHIEU (MaPhong, MaRap),
+    PRIMARY KEY (MaVe, MaPhong, MaPhim, MaRap)
+)

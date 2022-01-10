@@ -37,8 +37,13 @@ $(document).ready(function () {
     }
   });
 
+  $("#btn-continue2").click(function () {
+    // $(".modal_chair").show();
+    // window.location.href = "./buy_tickets.php";
+  });
+
   btn_buy_ticket.click(function () {
-    //   modal.show();
+    // modal.show();
     window.location.href = "./buy_tickets.php";
   });
 
@@ -57,9 +62,21 @@ $(document).ready(function () {
   });
 
   // JS Choose Chair
-  $(".chair_item").click(function () {
-    $(".chair_item").css("background-color", "green");
+  var selectedChair;
+  // $(".chair_item").click(function () {
+  //   $(".chair_item").css("background-color", "green");
+  // });
+  $(".chair_item").each(function (i, obj) {
+    i.click(function () {
+
+      // var chairChose = ;
+      console.log(i.text());
+      // chairChose.css("background-color", "green");
+      // selectedChair.css("background-color", "#dbdee1");
+      // selectedChair = chairChose;
+    });
   });
+
 
   // JS Check Payment
   $("#btn_payment").click(function () {

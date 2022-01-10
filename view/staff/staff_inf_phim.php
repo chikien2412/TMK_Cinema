@@ -38,7 +38,7 @@ include_once '../../partials_front/header_nav_staff.php'
                     <tbody>
                         <tr>
                             <td>Chiến thần vô cực</td>
-                            <td>abc</td>
+                            <td>...</td>
                             <td>Hoạt hình</td>
                             <td>150 phút</td>
                             <td>30/06/2021</td>

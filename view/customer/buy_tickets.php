@@ -36,46 +36,35 @@ include_once '../../partials_front/header_nav_customer.php';
                 <a href="./choose_ticket.php">17:30</a>
                 <a href="./choose_ticket.php">18:30</a>
                 <a href="./choose_ticket.php">19:30</a>
-                <a href="./choose_ticket.php">10:30</a>
+                <a href="./choose_ticket.php">20:45</a>
+                <a href="./choose_ticket.php">22:30</a>
+            </div>
+        </div>
+        <div class="col-12 cinema">
+            <div class="cinema_heading">
+            Mipec Tower
+            </div>
+            <div class="cinema_body">
                 <a href="./choose_ticket.php">17:30</a>
+                <a href="./choose_ticket.php">18:30</a>
+                <a href="./choose_ticket.php">19:30</a>
+                <a href="./choose_ticket.php">20:45</a>
+                <a href="./choose_ticket.php">22:30</a>
             </div>
         </div>
         <div class="col-12 cinema">
             <div class="cinema_heading">
-                Vincom Bà Triệu
+            Hồ Gươm Plaza
             </div>
             <div class="cinema_body">
-                <a href="#">17:30</a>
-                <a href="#">18:30</a>
-                <a href="#">19:30</a>
-                <a href="#">10:30</a>
-                <a href="#">17:30</a>
+                <a href="./choose_ticket.php">17:30</a>
+                <a href="./choose_ticket.php">18:30</a>
+                <a href="./choose_ticket.php">19:30</a>
+                <a href="./choose_ticket.php">20:45</a>
+                <a href="./choose_ticket.php">22:30</a>
             </div>
         </div>
-        <div class="col-12 cinema">
-            <div class="cinema_heading">
-                Vincom Bà Triệu
-            </div>
-            <div class="cinema_body">
-                <a href="#">17:30</a>
-                <a href="#">18:30</a>
-                <a href="#">19:30</a>
-                <a href="#">10:30</a>
-                <a href="#">17:30</a>
-            </div>
-        </div>
-        <div class="col-12 cinema">
-            <div class="cinema_heading">
-                Vincom Bà Triệu
-            </div>
-            <div class="cinema_body">
-                <a href="#">17:30</a>
-                <a href="#">18:30</a>
-                <a href="#">19:30</a>
-                <a href="#">10:30</a>
-                <a href="#">17:30</a>
-            </div>
-        </div>
+
     </div>
 </div>
 

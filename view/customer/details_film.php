@@ -91,14 +91,14 @@ include_once '../../partials_front/header_nav_customer.php';
                 </div>
                 <div class="product_item rounded-0 mt-4 shadow-none">
                     <a class="product_link" href="./details_film.php">
-                        <img class="w-100 rounded-0" src="../../assets/img/pr_spiderman.jpg" alt="">
-                        <div class="product_name rounded-bottom">SPIDER-MAN: NO WAY HOME</div>
+                        <img class="w-100 rounded-0" src="../../assets/img/pr_rungthemang.jpg" alt="">
+                        <div class="product_name rounded-bottom">RỪNG THẾ MẠNG</div>
                     </a>
                 </div>
                 <div class="product_item rounded-0 mt-4 shadow-none">
                     <a class="product_link" href="./details_film.php">
-                        <img class="w-100 rounded-0" src="../../assets/img/pr_spiderman.jpg" alt="">
-                        <div class="product_name rounded-bottom">SPIDER-MAN: NO WAY HOME</div>
+                        <img class="w-100 rounded-0" src="../../assets/img/pr_khongphailucchet.jpg" alt="">
+                        <div class="product_name rounded-bottom">NO TIME TO DIE</div>
                     </a>
                 </div>
             </div>
