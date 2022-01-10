@@ -18,11 +18,15 @@ include_once '../../partials_front/header_nav_staff.php';
                 <div class="row">
                     <div class="py-2">
                         <br>
-                        <div class="">
-                            <a href="add_info_customer.php" class="btn_link"><i class="fas fa-user-plus"></i> THÊM KHÁCH HÀNG</a>
-                        </div>
+                        <div class="col-7">
+                <form action="../staff/add_info_customer.php" method="get">
+                    <button type="submit" class="btn  staff-add" style="margin-top :10px; margin-bottom: 30px"><i
+                            class="fas fa-plus-circle"></i>
+                        Thêm khách hàng</button>
+                </form>
+            </div>
 
-                        </br>
+                        
 
 
                         <table class="table table-hover table-striped" id="example" >
