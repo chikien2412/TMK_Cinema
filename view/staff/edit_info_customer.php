@@ -1,5 +1,5 @@
 <?php
-include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_login.php';
 include_once '../../partials_front/header_nav_staff.php';
 
 ?>
@@ -7,58 +7,66 @@ include_once '../../partials_front/header_nav_staff.php';
     <div class="container mb-3">
         <div class="my-5 row">
             <div class="col-12">
-                <h2 style="text-align: center">SỬA THÔNG TIN CÁ NHÂN</h2>
+                <h3 style="text-align: center">SỬA THÔNG TIN KHÁCH HÀNG</h3>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-9">
+                <?php
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+
+                    $sql = "SELECT * FROM khachhang WHERE MaKH = '$id'";
+                    $result = mysqli_query($con, $sql);
+                    $row = mysqli_fetch_assoc($result);
+                }
+                ?>
                 <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Họ và tên:</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control">
-
+                        <input type="text" class="form-control" value="<?php echo $row['HoTen'] ?>">
                     </div>
                 </div>
                 <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Ngày sinh:</label>
                     <div class="col-sm-6">
-                        <input type="date" class="form-control">
-
+                        <input type="date" class="form-control" value="<?php echo $row['NgaySinh'] ?>">
                     </div>
                 </div>
                 <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Số điện thoại:</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control">
-
+                        <input type="text" class="form-control" value="<?php echo $row['SDT'] ?>">
                     </div>
                 </div>
                 <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Email:</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control">
-
+                        <input type="text" class="form-control" value="<?php echo $row['Email'] ?>">
                     </div>
                 </div>
                 <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Giới tính:</label>
                     <div class="col-sm-6">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Nam
-                        </label>
-                        <input class="form-check-input ms-5" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label " for="flexRadioDefault2">
-                            Nữ
-                        </label>
-
+                        <?php
+                        if ($row['GioiTinh'] == true) {
+                            echo    '<input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Nam</label>
+                                    <input class="form-check-input ms-5" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label " for="flexRadioDefault2">Nữ</label>';
+                        } else {
+                            echo    '<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Nam</label>
+                                    <input class="form-check-input ms-5" checked type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label " for="flexRadioDefault2">Nữ</label>';
+                        }
+                        ?>
                     </div>
                 </div>
                 <div class="mb-3 row d-flex justify-content-center align-items-center">
                     <label for="inputPassword" class="col-sm-2 ">Địa chỉ:</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control">
-
+                        <input type="text" class="form-control" value="<?php echo $row['DiaChi'] ?>">
                     </div>
                 </div>
 
@@ -75,14 +83,12 @@ include_once '../../partials_front/header_nav_staff.php';
                                         <span class="modal_title_main">Bạn đã sửa thành công.</span>
                                     </div>
                                     <div class="modal_btn_group d-flex justify-content-around px-5">
-                                        <button type="button"
-                                            class="js_OK1 btn_link modal_btn btn_back px-5">OK</button>
+                                        <button type="button" class="js_OK1 btn_link modal_btn btn_back px-5">OK</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <a href="../staff/info_customer.php" class="btn staff-add " style="width: 140px;"
-                                type="submit">Quay lại</a>
+                            <a href="../staff/info_customer.php" class="btn staff-add " style="width: 140px;" type="submit">Quay lại</a>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ $(document).ready(function () {
     $(".payment").css("display", "block");
   });
 
-  $("#btn-back1").click(function () {
+  $("#btnBackPayment").click(function () {
     $(".tickets").css("display", "block");
     $(".chair").css("display", "none");
     $(".payment").css("display", "none");
@@ -19,7 +19,6 @@ $(document).ready(function () {
 
   // Modal
   var modal = $(".overlay");
-  var btn_buy_ticket = $(".btn_buy_ticket");
   var btn_close = $(".btn_close");
   var btn_back = $(".btn_back");
 
@@ -42,9 +41,12 @@ $(document).ready(function () {
     // window.location.href = "./buy_tickets.php";
   });
 
-  btn_buy_ticket.click(function () {
-    // modal.show();
+  $(".btn_buy_ticket_login").click(function () {
     window.location.href = "./buy_tickets.php";
+  });
+
+  $(".btn_buy_ticket").click(function () {
+    $(".overlay").show();
   });
 
   $("#btn-continue1").click(function () {
@@ -62,21 +64,11 @@ $(document).ready(function () {
   });
 
   // JS Choose Chair
-  var selectedChair;
-  // $(".chair_item").click(function () {
-  //   $(".chair_item").css("background-color", "green");
-  // });
-  $(".chair_item").each(function (i, obj) {
-    i.click(function () {
-
-      // var chairChose = ;
-      console.log(i.text());
-      // chairChose.css("background-color", "green");
-      // selectedChair.css("background-color", "#dbdee1");
-      // selectedChair = chairChose;
-    });
+  var chair = $('.chair_item');
+  chair.eq(50).click(function(){
+    chair.eq(50).css("background", "green");
+    $(".film_info-item-chair").text("G6")
   });
-
 
   // JS Check Payment
   $("#btn_payment").click(function () {
@@ -105,6 +97,11 @@ $(document).ready(function () {
         Number($(".total_price_student").val()) +
         Number($(".total_price_child").val())
     );
+    $(".total_price_ticket").val(
+      (Number($(".total_price_adult").val()) +
+        Number($(".total_price_student").val()) +
+        Number($(".total_price_child").val())).toString() + ' VNĐ'
+    );
   });
 
   quantity_student.change(function () {
@@ -114,6 +111,11 @@ $(document).ready(function () {
         Number($(".total_price_student").val()) +
         Number($(".total_price_child").val())
     );
+    $(".total_price_ticket").val(
+      (Number($(".total_price_adult").val()) +
+        Number($(".total_price_student").val()) +
+        Number($(".total_price_child").val())).toString() + ' VNĐ'
+    );
   });
 
   quantity_child.change(function () {
@@ -122,6 +124,11 @@ $(document).ready(function () {
       Number($(".total_price_adult").val()) +
         Number($(".total_price_student").val()) +
         Number($(".total_price_child").val())
+    );
+    $(".total_price_ticket").val(
+      (Number($(".total_price_adult").val()) +
+        Number($(".total_price_student").val()) +
+        Number($(".total_price_child").val())).toString() + ' VNĐ'
     );
   });
 

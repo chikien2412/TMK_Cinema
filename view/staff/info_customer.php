@@ -1,5 +1,5 @@
 <?php
-include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_login.php';
 include_once '../../partials_front/header_nav_staff.php';
 
 ?>
@@ -9,7 +9,7 @@ include_once '../../partials_front/header_nav_staff.php';
             <div class="container-fluid ">
                 <div class="row mt-3 pt-3 ">
                     <div class=" text-center">
-                        <h2>Thông tin khách hàng</h2>
+                        <h3>THÔNG TIN KHÁCH HÀNG</h3>
                     </div>
                 </div>
             </div>
@@ -19,17 +19,12 @@ include_once '../../partials_front/header_nav_staff.php';
                     <div class="py-2">
                         <br>
                         <div class="col-7">
-                <form action="../staff/add_info_customer.php" method="get">
-                    <button type="submit" class="btn  staff-add" style="margin-top :10px; margin-bottom: 30px"><i
-                            class="fas fa-plus-circle"></i>
-                        Thêm khách hàng</button>
-                </form>
-            </div>
-
-                        
-
-
-                        <table class="table table-hover table-striped" id="example" >
+                            <form action="../staff/add_info_customer.php" method="get">
+                                <button type="submit" class="btn  staff-add" style="margin-top :10px; margin-bottom: 30px"><i class="fas fa-plus-circle"></i>
+                                    Thêm khách hàng</button>
+                            </form>
+                        </div>
+                        <table class="table table-hover table-striped" id="example">
                             <thead>
                                 <tr class="table-info">
                                     <th scope="col">Họ tên</th>
@@ -40,70 +35,42 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <th data-orderable="false" scope="col">Giới tính</th>
                                     <th data-orderable="false" scope="col">Sửa</th>
                                     <th data-orderable="false" scope="col">Xóa</th>
-
-
                                 </tr>
                             </thead>
-
                             <tbody>
-                                <tr>
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit_info_customer.php"class="staff_Cancle ms-1 "><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel1 staff_Cancle ms-1" style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+                                <?php
+                                include '../../process/staff/get_info_customer.php';
 
-                                </tr>
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit_info_customer.php"class="staff_Cancle ms-1"><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel1 staff_Cancle ms-1 " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        if ($row['GioiTinh'] == 1) {
+                                            $gender = 'Nam';
+                                        } else {
+                                            $gender = 'Nữ';
+                                        }
 
-                                </tr>
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit_info_customer.php"class="staff_Cancle ms-1"><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel1 staff_Cancle ms-1 " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
+                                        $date = explode('-', $row['NgaySinh']);
+                                        $birthday = $date[2] . '-' . $date[1] . '-' . $date[0];
 
-                                </tr>
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit_info_customer.php"class="staff_Cancle ms-1"><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel1 staff_Cancle ms-1 " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
-
-                                </tr>
-                                <tr >
-                                    <td>Lương Chí Kiên</td>
-                                    <td>24/12/2001</td>
-                                    <td>0395123123</td>
-                                    <td>lck@gmail.com</td>
-                                    <td>Thái Nguyên</td>
-                                    <td>Nam</td>
-                                    <td><a href="edit_info_customer.php"class="staff_Cancle ms-1"><i class="fas fa-edit"></i></a></td>
-                                    <td><button type="submit" class = "btn_cancel1 staff_Cancle ms-1 " style = "border: none;"> <i class="fas fa-trash-alt"></i></button></td>
-
-                                </tr>
-
-                              
-                                
+                                        echo    '<tr>
+                                            <td>' . $row['HoTen'] . '</td>
+                                            <td>' . $birthday . '</td>
+                                            <td>' . $row['SDT'] . '</td>
+                                            <td>' . $row['Email'] . '</td>
+                                            <td>' . $row['DiaChi'] . '</td>
+                                            <td>' . $gender . '</td>
+                                            <td>
+                                                <a href="./edit_info_customer.php?id=' . $row['MaKH'] . '" class="staff_Cancle ms-1 ">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <button type="submit" class="btn_cancel1 staff_Cancle ms-1" style="border: none;"> <i class="fas fa-trash-alt"></i></button>
+                                            </td>
+                                        </tr>';
+                                    }
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>
@@ -111,23 +78,23 @@ include_once '../../partials_front/header_nav_staff.php';
             </div>
 </main>
 <script>
-$('#example').DataTable( {
+    $('#example').DataTable({
         "language": {
             "infoFiltered": "(được lọc từ _MAX_ bản ghi )",
-                "info": "Hiển thị trang _PAGE_ trong tổng _PAGES_ trang",
-                "infoEmpty": "Không có dữ liệu",
-                "lengthMenu": "Hiển thị _MENU_ dữ liệu",
-                "loadingRecords": "Đang tải...",
-"paginate": {
-                    "first": "Đầu tiên",
-                    "last": "Cuối cùng",
-                    "next": "Sau",
-                    "previous": "Trước"
-                },
-                "search": "Tìm kiếm:",
-                "zeroRecords": "Không tìm thấy kết quả",
+            "info": "Hiển thị trang _PAGE_ trong tổng _PAGES_ trang",
+            "infoEmpty": "Không có dữ liệu",
+            "lengthMenu": "Hiển thị _MENU_ dữ liệu",
+            "loadingRecords": "Đang tải...",
+            "paginate": {
+                "first": "Đầu tiên",
+                "last": "Cuối cùng",
+                "next": "Sau",
+                "previous": "Trước"
+            },
+            "search": "Tìm kiếm:",
+            "zeroRecords": "Không tìm thấy kết quả",
         }
-    } );
+    });
 </script>
 <div class="overlay Cancel">
     <div class="modal_container">

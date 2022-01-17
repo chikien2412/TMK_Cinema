@@ -1,5 +1,5 @@
 <?php
-include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_login.php';
 include_once '../../partials_front/header_nav_staff.php';
 
 ?>
@@ -7,7 +7,7 @@ include_once '../../partials_front/header_nav_staff.php';
     <div class="container mb-3">
         <div class="my-5 row">
             <div class="col-12">
-                <h2 style="text-align: center">THÊM THÔNG TIN CÁ NHÂN</h2>
+                <h3 style="text-align: center">THÊM THÔNG TIN KHÁCH HÀNG</h3>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
@@ -61,7 +61,7 @@ include_once '../../partials_front/header_nav_staff.php';
 
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-12">
                         <div class="gap-2 d-md-flex justify-content-md-center my-4">

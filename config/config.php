@@ -1,18 +1,12 @@
 <?php
-if (!$con) {
-    die('Kết nối không thành công!');
-}
+    const HOST = 'localhost';
+    const USER = 'root';
+    const PASS = '';
+    const DB   = 'tmk_cinema';
 
-$serverName = "CVTAN\CVTAN";
-const USER = 'sa';
-const PASS = 'caotan@123';
-const DB   = 'DatVe';
-$connectionInfo = array("Database" => DB, "UID" => USER, "PWD" => PASS);
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+    $con = mysqli_connect(HOST, USER, PASS, DB);
 
-if ($conn) {
-    die('Kết nối thành công!<br/>');
-} else {
-    echo "Kết nối không thành công.<br />";
-    die(print_r(sqlsrv_errors(), true));
-}
+    if(!$con) {
+        die('Kết nối không thành công!');
+    }
+?>

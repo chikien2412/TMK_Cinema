@@ -1,5 +1,5 @@
 <?php
-include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_login.php';
 include_once '../../partials_front/header_nav_staff.php';
 ?>
 
@@ -11,21 +11,12 @@ include_once '../../partials_front/header_nav_staff.php';
                     thông tin</h3>
             </div>
         </div>
-        <div class="row" style = "display : flex; justify-content:space-between">
+        <div class="row" style="display : flex; justify-content:space-between">
             <div class="col-5 ms-4 mt-3 me-4">
                 <div class="mb-3 row">
                     <label for="staticTenPhim" class="col-3 col-form-label">Tên phim: </label>
                     <div class="col-9">
-                        <input type="text" class="form-control" required style="height: 35px; width: 100%;"
-                            id="inputTenPhim">
-                    </div>
-                </div>
-            </div>
-            <div class="col-5 ms-4 mt-3 me-4">
-                <div class="mb-3 row">
-                    <label for="staticSX" class="col-3 col-form-label">Sản xuất: </label>
-                    <div class="col-9">
-                        <input type="text" class="form-control" style="height: 35px; width: 100%;" id="inputSX">
+                        <input type="text" class="form-control" required style="height: 35px; width: 100%;" id="inputTenPhim">
                     </div>
                 </div>
             </div>
@@ -49,7 +40,15 @@ include_once '../../partials_front/header_nav_staff.php';
                 <div class="mb-3 row">
                     <label for="inputTheLoai" class="col-3 col-form-label">Thể loại:</label>
                     <div class="col-9">
-                        <input type="text" class="form-control" style="height: 35px; width: 100%;" id="inputTheLoai">
+                        <select name="example" class="staff_ComB">
+                            <option value="A">Khoa học viễn tưởng</option>
+                            <option value="A">Kinh dị</option>
+                            <option value="A">Hành động</option>
+                            <option value="A">Tình cảm</option>
+                            <option value="A">Kiếm Hiệp</option>
+                            <option value="B">Tài liệu</option>
+                            <option value="-">Phiêu Lưu</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -71,18 +70,6 @@ include_once '../../partials_front/header_nav_staff.php';
             </div>
             <div class="col-5 ms-4 mt-3 me-4">
                 <div class="mb-3 row">
-                    <label for="inputDD" class="col-3 col-form-label">Năm SX:</label>
-                    <div class="col-9">
-                        <select name="example" class="staff_ComB">
-                            <option value="A">2019</option>
-                            <option value="B">2020</option>
-                            <option value="-">2021</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="col-5 ms-4 mt-3 me-4">
-                <div class="mb-3 row">
                     <label for="inputTL" class="col-3 col-form-label">Ngày KC:</label>
                     <div class="col-sm-9">
                         <input type="date" name="" class="staff_date" style="" id="">
@@ -92,8 +79,7 @@ include_once '../../partials_front/header_nav_staff.php';
             <div class="row">
                 <div class="col-10" style="margin-left: 300px;margin-top: 20px; margin-bottom: 20px;">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class=" js_addinf btn me-md-2 staff-add  "
-                            style="width: 140px; margin: 8px;" type="button">Xác
+                        <button class=" js_addinf btn me-md-2 staff-add  " style="width: 140px; margin: 8px;" type="button">Xác
                             nhận</button>
                         <div class="overlay modal_add_film">
                             <div class="modal_container">
@@ -103,14 +89,13 @@ include_once '../../partials_front/header_nav_staff.php';
                                     <span class="modal_title_main">Bạn đã thêm thành công.</span>
                                 </div>
                                 <div class="modal_btn_group d-flex justify-content-around px-5">
-                                    <button type="button" class="js_OK btn_link modal_btn btn_back px-5" >OK</button>
+                                    <button type="button" class="js_OK btn_link modal_btn btn_back px-5">OK</button>
                                 </div>
                             </div>
                         </div>
 
                         <form action="../staff/staff_inf_phim.php" method="get">
-                            <button class="btn staff-add " style="width: 140px; margin: 8px;margin-left: 35px;margin-right: 115px"
-                                type="submit">Quay lại</button>
+                            <button class="btn staff-add " style="width: 140px; margin: 8px;margin-left: 35px;margin-right: 115px" type="submit">Quay lại</button>
                         </form>
                     </div>
                 </div>

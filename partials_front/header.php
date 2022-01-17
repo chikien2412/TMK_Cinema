@@ -29,13 +29,13 @@
         <img class="header_logo" src="../../assets/img/logo.png" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <form class="d-flex">
-              <input class="input_search form-control me-2" type="search" placeholder="Tìm kiếm tên phim, diễn viên, ..." aria-label="Search">
-              <button class="btn_search btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
-          </form>
+        <form class="d-flex">
+          <input class="input_search form-control me-2" type="search" placeholder="Tìm kiếm tên phim, diễn viên, ..." aria-label="Search">
+          <button class="btn_search btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
+        </form>
       </div>
       <ul class="header_log d-flex position-relative">
         <li class=""><a href="../register.php" class="header_log_link">Đăng ký</a></li>

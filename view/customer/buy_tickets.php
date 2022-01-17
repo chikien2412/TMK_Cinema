@@ -1,5 +1,5 @@
 <?php
-include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_login.php';
 include_once '../../partials_front/header_nav_customer.php';
 ?>
 
@@ -12,7 +12,11 @@ include_once '../../partials_front/header_nav_customer.php';
             <label for="validationDefault01" class="form-label">Khu vực:</label>
             <select class="form-select" id="validationDefault01" required>
                 <option selected value="">Cả nước</option>
+                <option>Hà Nội</option>
+                <option>Đà Nẵng</option>
+                <option>TP Hồ Chí Minh</option>
                 <option>Thanh Hóa</option>
+                <option>Hải Phòng</option>
             </select>
         </div>
         <div class="col-4 buy_tickets-item">
@@ -22,8 +26,15 @@ include_once '../../partials_front/header_nav_customer.php';
         <div class="col-4 buy_tickets-item">
             <label for="validationDefault03" class="form-label">Rạp chiếu:</label>
             <select class="form-select" id="validationDefault03" required>
-                <option selected value="">Tất cả rạp</option>
-                <option>...</option>
+            <?php
+                include_once "../../process/customer/get_cinema.php";
+                echo '<option selected value="">Tất cả rạp</option>';
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo '<option value="' . $row['MaRap'] . '">' . $row['TenRap'] . '</option>';
+                    }
+                }
+                ?>
             </select>
         </div>
     </form>

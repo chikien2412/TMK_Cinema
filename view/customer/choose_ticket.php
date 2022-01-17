@@ -1,5 +1,5 @@
 <?php
-include_once '../../partials_front/header.php';
+include_once '../../partials_front/header_login.php';
 include_once '../../partials_front/header_nav_customer.php';
 ?>
 
@@ -55,15 +55,15 @@ include_once '../../partials_front/header_nav_customer.php';
                     </div>
                     <div class="film_info-item">
                         Suất chiếu:
-                        <span>22:30 | Thứ tư, 05/01/2022</span>
+                        <span>22:30 | Thứ sáu, 21/01/2022</span>
                     </div>
                     <div class="film_info-item">
                         Ghế:
-                        <span></span>
+                        <span class="film_info-item-chair"></span>
                     </div>
                     <div class="film_info-item-sum">
                         Tổng:
-                        <span>90 000 VNĐ</span>
+                        <input class="total_price_ticket bg-transparent border-0 text-start" type="text" name="" id="" value="0 VNĐ" disabled>
                     </div>
                     <div class="mt-4 text-center">
                         <button type="button" id="btn-continue1" class="btn_link">
@@ -96,7 +96,7 @@ include_once '../../partials_front/header_nav_customer.php';
                 <div class="choose_ticket-heading">CHỌN GHẾ</div>
                 <div class="mt-5 mb-4 mx-5 d-flex flex-column align-items-center">
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">K</li>
+                        <li class="chair_item_heading">K</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -104,7 +104,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">J</li>
+                        <li class="chair_item_heading">J</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -112,7 +112,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">H</li>
+                        <li class="chair_item_heading">H</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -120,7 +120,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">G</li>
+                        <li class="chair_item_heading">G</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -128,7 +128,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">F</li>
+                        <li class="chair_item_heading">F</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -136,7 +136,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">E</li>
+                        <li class="chair_item_heading">E</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -144,7 +144,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">D</li>
+                        <li class="chair_item_heading">D</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -152,7 +152,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">C</li>
+                        <li class="chair_item_heading">C</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -160,7 +160,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">B</li>
+                        <li class="chair_item_heading">B</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -168,7 +168,7 @@ include_once '../../partials_front/header_nav_customer.php';
                         ?>
                     </ul>
                     <ul class="chair_list d-flex">
-                        <li class="chair_item">A</li>
+                        <li class="chair_item_heading">A</li>
                         <?php
                         for ($i = 1; $i <= 15; $i++) {
                             echo '<li class="chair_item">' . $i . '</li>';
@@ -206,15 +206,15 @@ include_once '../../partials_front/header_nav_customer.php';
                     </div>
                     <div class="film_info-item">
                         Xuất chiếu:
-                        <span>22:30 | Thứ tư, 05/01/2022</span>
+                        <span>22:30 | Thứ sáu, 21/01/2022</span>
                     </div>
                     <div class="film_info-item">
                         Ghế:
-                        <span>A2</span>
+                        <span class="film_info-item-chair"></span>
                     </div>
                     <div class="film_info-item-sum">
                         Tổng:
-                        <span>90 000 VNĐ</span>
+                        <input class="total_price_ticket bg-transparent border-0 text-start" type="text" name="" id="" value="0 VNĐ" disabled>
                     </div>
                     <div class="button_container d-flex justify-content-between">
                         <div class="mt-4 text-center">
@@ -263,17 +263,20 @@ include_once '../../partials_front/header_nav_customer.php';
                                 <option>Ví điện tử MoMo</option>
                             </select>
                         </div>
+
+                        <?php include_once "../../process/customer/get_info_customer.php"; ?>
+
                         <div class="col-12 d-flex justify-content-between align-items-center">
                             <label for="inputNamePayment" class="form-label mb-0">Họ và Tên:</label>
-                            <input type="text" class="form-control payment_input rounded-0" id="inputNamePayment" required>
+                            <input type="text" class="form-control payment_input rounded-0" id="inputNamePayment" required value="<?php echo $row['HoTen'] ?>">
                         </div>
                         <div class="col-12 d-flex justify-content-between align-items-center">
                             <label for="inputEmailPayment" class="form-label mb-0">Email:</label>
-                            <input type="email" class="form-control payment_input rounded-0" id="inputEmailPayment" required>
+                            <input type="email" class="form-control payment_input rounded-0" id="inputEmailPayment" required value="<?php echo $row['Email'] ?>">
                         </div>
                         <div class="col-12 d-flex justify-content-between align-items-center">
                             <label for="inputPhonePayment" class="form-label mb-0">Số điện thoại:</label>
-                            <input type="text" class="form-control payment_input rounded-0" id="inputPhonePayment" required>
+                            <input type="text" class="form-control payment_input rounded-0" id="inputPhonePayment" required value="<?php echo $row['SDT'] ?>">
                         </div>
                     </form>
                     <div class="px-5 my-3 payment_article">
@@ -324,7 +327,7 @@ include_once '../../partials_front/header_nav_customer.php';
                                         <span>Bạn có thể vào thông tin cá nhân để xem thông tin vé.</span>
                                     </div>
                                     <div class="modal_btn_group d-flex justify-content-around mt-4 mb-3">
-                                        <a href="./home.php" class="btn_link modal_btn">Quay về trang chủ</a>
+                                        <a href="./home_login.php" class="btn_link modal_btn">Quay về trang chủ</a>
                                     </div>
                                 </div>
                             </div>
@@ -340,19 +343,19 @@ include_once '../../partials_front/header_nav_customer.php';
                     <div class="product_name">SPIDER-MAN: NO WAY HOME</div>
                     <div class="film_info-item mt-2">
                         Rạp:
-                        <span></span>
+                        <span>Mipec Tower</span>
                     </div>
                     <div class="film_info-item">
                         Xuất chiếu:
-                        <span></span>
+                        <span>22:30 | Thứ sáu, 21/01/2022</span>
                     </div>
                     <div class="film_info-item">
                         Ghế:
-                        <span></span>
+                        <span class="film_info-item-chair"></span>
                     </div>
                     <div class="film_info-item-sum">
                         Tổng:
-                        <span>0 VNĐ</span>
+                        <input class="total_price_ticket bg-transparent border-0 text-start" type="text" name="" id="" value="0 VNĐ" disabled>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,14 @@
   --text-primary: #333;
   --text-white: #fff;
   --text-black: #000;
+  --main-color: #2980b9;
+  --form-bg: rgba(255, 255, 255, 0.8);
+  --border-color: #2980b9;
+  --form-color: #000;
+  --form-input-bg: rgba(2, 2, 2, 0.22);
+  --border-radius: 10px;
+  --form-logo-size: 200px;
+  --form-max-width: 500px;
 }
 
 /* Tag */
@@ -59,18 +67,6 @@ button {
 }
 
 /* Login */
-
-:root {
-  --main-color: #2980b9;
-  --form-bg: rgba(255, 255, 255, 0.8);
-  --border-color: #2980b9;
-  --form-color: #000;
-  --form-input-bg: rgba(2, 2, 2, 0.22);
-  --border-radius: 10px;
-  --form-logo-size: 200px;
-  --form-max-width: 500px;
-}
-
 #login_container {
   font-family: "Source Sans Pro", sans-serif;
   height: 100vh;
@@ -309,6 +305,11 @@ button {
   border: 1px solid #ced4da;
 }
 
+.register_input:focus {
+  border: 2px solid var(--color-primary);
+  box-shadow: none;
+}
+
 .form-check-input:checked {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
@@ -399,6 +400,23 @@ button {
 }
 
 .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.user {
+  font-size: 24px;
+  padding-top: 2px;
+}
+
+.user_name {
+  font-size: 16px;
+}
+
+.user_name:focus {
+  box-shadow: none;
+}
+
+.user_name:hover {
   color: var(--color-primary);
 }
 
@@ -584,7 +602,7 @@ button {
   font-weight: 500;
 }
 
-.film_info-item-sum span {
+.film_info-item-sum input {
   padding-left: 5px;
   color: var(--color-primary);
 }
@@ -600,11 +618,16 @@ button {
   cursor: pointer;
 }
 
-.chair_item:first-child {
+.chair_item_heading {
   margin-right: 20px;
   background-color: var(--text-white);
   line-height: 20px;
   border: var(--text-primary) solid 1px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+  line-height: 20px;
   cursor: default;
 }
 
@@ -872,7 +895,7 @@ option:hover {
 
 .table.dataTable tbody th,
 table.dataTable tbody td {
-  padding: 8px 14px;
+  padding: 8px 12px;
 }
 
 table.dataTable.no-footer {
